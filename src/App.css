@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "sg";
+  src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2) format(woff2);
+}
+
+:root {
+  --f1: "sg";
+
+  --cl-prim: #0A0A0A;
+  --cl-sec: #f7f7f7;
+  --cl-border: #262626;
+
+  --c1: #0D1117;
+
+  --t1: #eaeaea;
+  --t2: #7A7A7A;
+
+  --padding: 2em;
+  --margin: 2em;
+
+  --cl2: #73BCEC;
+  --cl3: #F77171;
+}
+
+* {
+  color: var(--cl-sec);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 0.85;
+  outline: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: var(--cl-prim);
+  font-family: var(--f1);
+}
+
+main {
+  background-color: var(--cl-border);
+  margin-inline: var(--margin);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.red {
+  color: var(--cl3);
+}
+
+@media (max-width:747px) {
+  main {
+    margin-inline: 1rem;
+  }
+}

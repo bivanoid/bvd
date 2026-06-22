@@ -1,0 +1,84 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.projects .con_ttl {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    background-color: var(--cl-prim);
+    padding: 2rem;
+    padding-left: auto;
+    text-align: left;
+    padding-block: 4rem;
+    position: relative;
+}
+
+.projects .con_ttl::after {
+    content: ". :";
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    rotate: 180deg;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.projects .con_ttl h2 {
+    font-size: 1.5rem;
+    margin-left: 50%;
+}
+
+.projects .con_items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.projects .con_items .item {
+    width: 100%;
+    background-color: var(--cl-prim);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.projects .con_items .item .con_name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+.projects .con_items .item .con_name h3 {
+    font-size: 1.5rem;
+}
+.projects .con_items .item .con_name p {
+    font-size: 0.85rem;
+    padding: 0;
+    color: var(--t2);
+    font-weight: 600;
+}
+
+.projects .con_items .item .con_name .con_lang{
+    display: flex;
+    gap: 0.25rem;
+}
+
+.projects .con_items .item .con_name .con_lang p {
+    font-size: 0.85rem;
+    padding: 0;
+    color: var(--t1);
+    font-weight: 800;
+    margin-top: 0.75rem;
+}
+
+@media (max-width:747px) {
+    .projects .con_ttl h2 {
+    font-size: 1.5rem;
+    margin-left: 25%;
+}
+}

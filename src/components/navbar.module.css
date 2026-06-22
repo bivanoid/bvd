@@ -1,0 +1,28 @@
+.nav {
+    z-index: 999;
+    
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--padding);
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    background-color: var(--cl-prim);
+    border-bottom: 1px solid var(--cl-border);
+    font-weight: 800;
+}
+
+.nav p {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.nav p:nth-of-type(1) {
+    rotate: 180deg;
+}
+
+.nav p:nth-of-type(2) {
+    rotate: 180deg;
+}

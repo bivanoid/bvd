@@ -1,0 +1,130 @@
+.expert {
+    width: 100%;
+    height: fit-content;
+}
+
+.expert .con_expertise {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.con_expertise h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--cl-prim);
+}
+
+.con_expertise h3:nth-child(1) {
+    align-self: flex-end;
+}
+
+.con_expertise h3 span {
+    font-size: 1.25rem;
+    color: var(--t2);
+}
+
+.con_expertise .con_skill {
+display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr;
+    align-items: center;
+    font-weight: 600;
+    padding-block: var(--padding);
+    background-color: var(--cl-prim);
+}
+
+.con_expertise .con_skill span {
+    justify-self: center;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--cl3);
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.con_expertise .con_skill span::before {
+    content: '';
+    justify-self: center;
+    height: 4rem;
+    width: 2px;
+    position: absolute;
+    background-color: var(--cl3);
+}
+
+.con_expertise .con_skill p {
+    padding-right: 2rem;
+}
+
+.expert ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    margin-block: 1px;
+    gap: 1px;
+}
+
+.expert ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cl-prim);
+    padding: var(--padding);
+    font-weight: 600;
+}
+
+.expert ul li h3 {
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    color: var(--cl2);
+}
+
+@media (max-width:747px) {
+    .con_expertise .con_skill {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-inline: var(--padding);
+    }
+
+    .con_expertise .con_skill h3 {
+        padding: 0;
+    }
+    .con_expertise .con_skill h3:nth-child(1) {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .con_expertise .con_skill h3 {
+        padding: 0;
+    }
+    .con_expertise .con_skill span {
+        width: 4rem;
+        margin-block: 2rem;
+    }
+
+    .con_expertise .con_skill span::before {
+        height: 1rem;
+    }
+
+    .expert ul {
+        flex-direction: column;
+    }
+
+    .expert ul li {
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: var(--padding);
+    }
+}

@@ -1,0 +1,73 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.contact .con_ttl {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    background-color: var(--cl-prim);
+    padding-block: 4rem;
+    margin-top: 1px;
+    position: relative;
+}
+
+.contact .con_ttl::after {
+    content: ": .";
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    rotate: 180deg;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.contact .con_ttl h2 {
+    font-size: 1.5rem;
+    max-width: 50%;
+}
+
+
+.contact :is(input, textarea) {
+    width: 100%;
+    height: 70px;
+    resize: none;
+    background: var(--cl-prim);
+    border: none;
+    padding: var(--padding);
+    font-family: var(--f1);
+    font-weight: 600;
+}
+
+.contact textarea {
+    height: 140px;
+}
+
+.con_inp_submit {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.con_inp_submit button {
+    height: auto;
+    width: 100px;
+    border: none;
+    font-family: var(--f1);
+    background-color: var(--cl-prim);
+    border-left: 1px solid var(--cl-border);
+    font-weight: 600;
+    color: var(--cl2);
+}
+
+@media (max-width:747px) {
+    .contact .con_ttl h2 {
+        max-width: 85%;
+    }
+
+}
