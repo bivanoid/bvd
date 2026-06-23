@@ -12,6 +12,10 @@
     height: 50px;
 }
 
+.footer svg path {
+    fill: var(--cl3);
+}
+
 .footer .con_footer {
     display: flex;
     flex-direction: row;
