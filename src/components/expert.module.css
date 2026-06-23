@@ -19,7 +19,7 @@
 }
 
 .con_expertise h3:nth-child(1) {
-    align-self: flex-end;
+    width: 100%;
 }
 
 .con_expertise h3 span {

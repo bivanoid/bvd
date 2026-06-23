@@ -5,8 +5,9 @@
 
 :root {
   --f1: "sg";
-
-  --cl-prim: #0A0A0A;
+  /* --cl-prim: #121420; */
+  --cl-prim: #04050d;
+  /* --cl-prim: #0A0A0A; */
   --cl-sec: #f7f7f7;
   --cl-border: #262626;
 

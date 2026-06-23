@@ -76,7 +76,7 @@ export default function Projects() {
                             <p>{item.desc}</p>
                             <div className={s.con_lang}>
                                 {item.tech.map((lang) => (
-                                    <p key={lang.lang}><span className="red">[</span>{lang.lang}<span className="red">]</span></p>
+                                    <p key={lang.lang}><span className={`red ${s.red}`}>[</span>{lang.lang}<span className={`red ${s.red}`}>]</span></p>
                                 ))}
                             </div>
                         </div>

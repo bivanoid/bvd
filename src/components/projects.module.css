@@ -75,6 +75,23 @@
     font-weight: 800;
     margin-top: 0.75rem;
 }
+/* 
+.projects .con_items .item:hover {
+    background-color: var(--cl3);
+}
+
+.projects .con_items .item:hover .con_name :is(h3, p) {
+    color: var(--cl-prim);
+}
+
+.projects .con_items .item:hover .con_name .con_lang p {
+    color: var(--cl-prim);
+}
+
+.projects .con_items .item:hover .con_name .con_lang .red {
+    color: var(--cl-prim);
+} */
+
 
 @media (max-width:747px) {
     .projects .con_ttl h2 {

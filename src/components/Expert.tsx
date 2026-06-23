@@ -4,7 +4,7 @@ export default function Expert() {
     return (
         <section className={s.expert}>
             <div className={s.con_expertise}>
-                {/* <h3>My Expertise <span>3</span></h3> */}
+                <h3>What I can do?</h3>
                 <div className={s.con_skill}>
                     <h3>01</h3>
                     <h3>Web Development</h3>
