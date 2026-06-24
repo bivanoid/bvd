@@ -1,8 +1,8 @@
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Expert from "../components/Expert";
-import Projects from "../components/Projects";
-import Sidebar from "../components/Sidebar";
+import About from "./About";
+import Contact from "./Contact";
+import Expert from "./Expert";
+import Projects from "./Projects";
+import Sidebar from "./Sidebar";
 import s from "./content.module.css";
 
 export default function Content() {

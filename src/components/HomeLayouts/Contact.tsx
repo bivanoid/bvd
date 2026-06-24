@@ -7,7 +7,7 @@ export default function Contact() {
     const noWa: number = import.meta.env.VITE_WA;
     function Send() {
         window.open(
-            `https://wa.me/${noWa}?text=Halo, saya ${useName} \n ${useDesc}`,
+            `https://wa.me/${noWa}?text=Halo, saya ${useName} ${useDesc}`,
             "_blank"
         );
     }

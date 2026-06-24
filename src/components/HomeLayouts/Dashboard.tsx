@@ -1,5 +1,5 @@
 import s from "./dashboard.module.css";
-import Logo from "../assets/icon.svg?react"
+import Logo from "../../assets/icon.svg?react"
 export default function Dashboard() {
     return (
         <section className={s.hero}>

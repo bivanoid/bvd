@@ -1,6 +1,6 @@
 .nav {
     z-index: 999;
-    
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -12,6 +12,15 @@
     background-color: var(--cl-prim);
     border-bottom: 1px solid var(--cl-border);
     font-weight: 800;
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.back {
+    text-decoration: none;
 }
 
 .nav p {

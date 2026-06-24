@@ -1,0 +1,151 @@
+.article {
+    width: 100%;
+}
+
+.con_article {
+    margin-inline: var(--margin);
+    height: 100%;
+    min-height: 100svh;
+    padding-inline: 1px;
+    background-color: var(--cl-border);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.con_article .header {
+    background-color: var(--cl-prim);
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_article .header h1 {
+    font-size: clamp(5rem, 5vw, 10rem);
+    text-align: center;
+}
+
+.con_article main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+}
+
+.con_article main .con_sticky {
+    position: relative;
+    height: auto;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 25vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.sticky a {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: var(--padding);
+    background-color: var(--cl-prim);
+    font-weight: 600;
+}
+
+.con_sticky_content {
+    padding: var(--padding);
+    background-color: var(--cl-prim);
+    margin-bottom: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.con_sticky_content .img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--cl-border);
+}
+
+.con_sticky_content .con_lang {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.con_sticky_content p {
+    font-weight: 600;
+}
+
+.cross {
+    width: 4rem;
+    height: 2px;
+    background-color: var(--cl3);
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-block: 1rem;
+}
+
+.cross::after {
+    content: '';
+    justify-self: center;
+    height: 1rem;
+    width: 2px;
+    position: absolute;
+    background-color: var(--cl3);
+}
+
+.con_article main {
+    height: 300vh;
+}
+
+.con_article main .con_main {
+    background-color: var(--cl-prim);
+    padding: var(--padding);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+.con_article main .con_main .details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    gap: 1rem;
+    
+}
+
+.con_article main .con_main p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 75%;
+}
+
+.con_article main .con_main button {
+    display: grid;
+    place-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid var(--cl-border);
+    font-family: var(--f1);
+    align-self: center;
+}
+
+.side {
+    max-width: 100vh;
+    position: sticky;
+    top: 0;
+}

@@ -32,6 +32,7 @@
   outline: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  font-family: var(--f1);
 }
 
 ::-webkit-scrollbar {
