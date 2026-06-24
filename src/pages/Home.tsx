@@ -6,7 +6,7 @@ import Dashboard from "../components/HomeLayouts/Dashboard"
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+      <Navbar ttl="bivanoid" backTo="/"/>
       <main>
         <Dashboard/>
         <Content/>

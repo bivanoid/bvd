@@ -4,7 +4,7 @@ import s from "./navbar.module.css";
 interface NavbarProps {
     ttl?: string;
     nav?: boolean;
-    backTo: string;
+    backTo?: string;
 }
 
 export default function Navbar({
