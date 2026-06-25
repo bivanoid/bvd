@@ -22,6 +22,7 @@ export default function Navbar({
                 }
                 {ttl}</div>
             <p>: .</p>
+            
         </nav>
     )
 }

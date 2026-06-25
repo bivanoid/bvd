@@ -1,0 +1,79 @@
+{
+    "projects": [
+        {
+            "id": "bicture",
+            "name": "Bicture",
+            "link": "https://github.com/bivanoid/bicture-app",
+            "desc": "Mini Social Media Apps",
+            "type": "Application",
+            "tech": [
+                { "lang": "JAVA" },
+                { "lang": "XML" },
+                { "lang": "FIREBASE" }
+            ],
+            "detail": [
+                "Bicture adalah aplikasi media sosial sederhana yang dikembangkan menggunakan Java, XML, dan Firebase.",
+                "Aplikasi ini memungkinkan pengguna untuk membagikan foto dalam format JPG, PNG, maupun GIF, berinteraksi melalui fitur suka dan komentar, mengikuti pengguna lain, menyimpan postingan ke bookmark, serta menjelajahi profil pengguna lainnya. Selain itu, tersedia fitur pengeditan dan penghapusan postingan, kustomisasi profil, pencarian pengguna, serta dukungan tema terang dan gelap.",
+                "Firebase digunakan sebagai layanan utama untuk autentikasi pengguna, penyimpanan data, dan sinkronisasi pembaruan secara real-time di seluruh platform.",
+                "<ol><li>Membagikan foto (JPG, PNG, GIF)</li><li>Berinteraksi melalui likes dan comments</li><li>Mengikuti pengguna lain</li><li>Bookmark postingan</li><li>Tema terang dan gelap</li></ol>"
+            ],
+            "textBtn": "see website",
+            "image": "/img/bicture_umb.webp"
+        },
+        {
+            "id": "doit",
+            "name": "DoIt",
+            "link": "https://bivanoid.github.io/DoIt/",
+            "desc": "Website Todolist Sederhana",
+            "type": "Website",
+            "tech": [
+                { "lang": "React" },
+                { "lang": "TSX" },
+                { "lang": "Weather API Intergration" }
+            ],
+            "detail": [
+                "Website ini dibuat untuk penggunaan personal, dimana hal-hal didalamnya secara harcode ditulis untuk dan kemudahan bagi saya sendiri",
+                "Dengan menggunakan Teknologi React + TSX serta dapat meyimpan data di dalam cache browser",
+                "<ol><li>Pemilihan level prioritas task</li><li>Deadline untuk task</li><li>Penyimpanan data di cache browser</li><li>Integrasi Weather API</li></ol>"
+            ],
+            "textBtn": "see the code",
+            "image": "/img/doit.webp"
+        },
+        {
+            "id": "riyadh",
+            "name": "Riyadh Learning",
+            "link": "https://github.com/bivanoid/Riyadh-Al-quran",
+            "desc": "Website Pembelajaran Al-Quran",
+            "type": "Website",
+            "tech": [
+                { "lang": "PHP" },
+                { "lang": "MYSQL" },
+                { "lang": "Kemenag API" }
+            ],
+            "detail": [
+                "Website pembelajaran Al-Quran ini dikembangkan secara berkelompok yang dimana ini salah satu tugas proyek dalam ujian ahkir semester",
+                "<ol><li>Ayat-ayat Al-Quran</li><li>Daftar huruf Hijaiyah</li><li>Angka arab</li><li>Jadwal sholat</li><li>Pengumuman</li></ol>"
+            ],
+            "textBtn": "see the code",
+            "image": "/img/noimg.webp"
+        },
+        {
+            "id": "loomnyarn",
+            "name": "Loom & Yarn",
+            "link": "https://github.com/bivanoid/Loom-Yarn",
+            "desc": "Website UMKM Boneka Rajut",
+            "type": "Website",
+            "tech": [
+                { "lang": "PHP" },
+                { "lang": "MYSQL" }
+            ],
+            "detail": [
+                "Website ini membantu UMKM dalam menjualkan hasil karyanya, mereka menyambut positif penggunaan teknologi dalam kehidupan sehari-hari",
+                "<ol><li>Lihat katalog barang yang dijual</li><li>Mengetahui harga secara langsung</li><li>Memilih dan membeli beberapa barang sekaligus</li></ol>",
+                "Produk berkualitas tinggi dengan <strong>harga terjangkau</strong>"
+            ],
+            "textBtn": "see the code",
+            "image": "/img/loomnyarn.webp"
+        }
+    ]
+}

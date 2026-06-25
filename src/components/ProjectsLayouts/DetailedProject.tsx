@@ -1,15 +1,13 @@
 import { useParams } from "react-router-dom";
 import s from "./detailedProject.module.css";
-import { DataProjects } from "../../data/dataProjects";
+import DataProjects from "../../data/project_data.json";
 import Navbar from "../CommontLayouts/Navbar";
-
 
 export default function DetailedProject() {
     const { id } = useParams();
 
-    const project = DataProjects.find(
-        (item) => item.id === id
-    );
+    const project = DataProjects.projects.find((item) => item.id === id);
+
 
     if (!project) {
         return <h2>404 Not Found</h2>
@@ -59,15 +57,18 @@ export default function DetailedProject() {
                     </div>
                     <div className={s.con_main}>
                         <div className={s.details}>
-                            {project?.detail.map((detail) => (
-                                <p key={detail}>{detail}</p>
+                            {project?.detail.map((detail, idx) => (
+                                <p 
+                                    key={idx}
+                                    dangerouslySetInnerHTML={{ __html: detail }}
+                                />
                             ))}
                         </div>
-                        <div className={s.side}>
+                        {/* <div className={s.side}>
                             <button onClick={copyUrl}>
                                 share
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </main>
             </div>

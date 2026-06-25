@@ -23,7 +23,7 @@
 }
 
 .con_article .header h1 {
-    font-size: clamp(5rem, 5vw, 10rem);
+    font-size: clamp(3rem, 5vw, 7rem);
     text-align: center;
 }
 
@@ -43,6 +43,7 @@
     position: sticky;
     top: 0;
     width: 25vw;
+    height: 100%;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -107,26 +108,30 @@
 
 .con_article main .con_main {
     background-color: var(--cl-prim);
-    padding: var(--padding);
+    padding-block: var(--padding);
+    padding-inline: 15vw;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    
+
 }
 
-.con_article main .con_main .details {
+.details {
     display: flex;
     flex-direction: column;
     flex: 1;
     height: auto;
     gap: 1rem;
-    
+
+}
+
+.details ol {
+    margin-left: 2rem;
 }
 
 .con_article main .con_main p {
     font-size: 1.5rem;
     font-weight: 600;
-    max-width: 75%;
 }
 
 .con_article main .con_main button {
@@ -144,4 +149,18 @@
     max-width: 100vh;
     position: sticky;
     top: 0;
+}
+
+@media (max-width:747px) {
+    .con_article main {
+        flex-direction: column;
+    }
+
+    .con_article main .con_main {
+        padding-inline: var(--padding);
+    }
+
+    .sticky {
+        width: 100%;
+    }
 }
