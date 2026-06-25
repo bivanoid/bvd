@@ -13,15 +13,6 @@ export default function DetailedProject() {
         return <h2>404 Not Found</h2>
     }
 
-    const copyUrl = async () => {
-        try {
-            await navigator.clipboard.writeText(window.location.href);
-            alert("URL copied!");
-        } catch (err) {
-            console.error("Failed to copy URL", err);
-        }
-    };
-
     return (
         <section className={s.article}>
             <Navbar ttl={`Opening : ${project.name}`} nav={true} backTo={"/"} />
@@ -64,11 +55,6 @@ export default function DetailedProject() {
                                 />
                             ))}
                         </div>
-                        {/* <div className={s.side}>
-                            <button onClick={copyUrl}>
-                                share
-                            </button>
-                        </div> */}
                     </div>
                 </main>
             </div>
