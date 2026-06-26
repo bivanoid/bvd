@@ -1,11 +1,12 @@
 .hero {
     padding: var(--padding);
-    padding-top: calc(var(--padding));
+    padding-top: calc(var(--padding) + 42px);
     height: calc(100svh);
     display: flex;
     margin-inline: 1px;
     background-color: var(--cl-prim);
     position: relative;
+            position: relative;
 }
 
 /* .hero::before {
