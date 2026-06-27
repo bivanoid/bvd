@@ -12,10 +12,10 @@
                 { "lang": "FIREBASE" }
             ],
             "detail": [
-                "Bicture adalah aplikasi media sosial sederhana yang dikembangkan menggunakan Java, XML, dan Firebase.",
-                "Aplikasi ini memungkinkan pengguna untuk membagikan foto dalam format JPG, PNG, maupun GIF, berinteraksi melalui fitur suka dan komentar, mengikuti pengguna lain, menyimpan postingan ke bookmark, serta menjelajahi profil pengguna lainnya. Selain itu, tersedia fitur pengeditan dan penghapusan postingan, kustomisasi profil, pencarian pengguna, serta dukungan tema terang dan gelap.",
-                "Firebase digunakan sebagai layanan utama untuk autentikasi pengguna, penyimpanan data, dan sinkronisasi pembaruan secara real-time di seluruh platform.",
-                "<ol><li>Membagikan foto (JPG, PNG, GIF)</li><li>Berinteraksi melalui likes dan comments</li><li>Mengikuti pengguna lain</li><li>Bookmark postingan</li><li>Tema terang dan gelap</li></ol>"
+                "Bicture adalah aplikasi galeri foto native Android yang dirancang untuk mengelola, berbagi, dan berinteraksi dengan foto. Dibangun dengan Java dan Firebase, aplikasi ini menawarkan pengalaman pengguna modern dengan fitur sosial seperti 'Neat' system (pengganti like), bookmark, komentar, dan follow untuk membangun komunitas fotografer. Stack",
+                "<strong>Languages</strong><ul><li>JavaScript</li></ul>",
+                "<strong>Framework / Runtime</strong> <ul> <li>Android SDK (minSdk 24, targetSdk 33)</li> <li>Gradle 8.6.0</li> </ul>",
+                "<strong>Notable Libraries</strong> <ul> <li><strong>Firebase</strong> - (Realtime Database, Storage, Authentication) — backend & cloud storage</li> <li><strong>Glide (v4.15.1)</strong> image loading dan caching</li> <li><strong>uCrop (v2.2.8)</strong> - crop & edit foto</li> </ul>"
             ],
             "textBtn": "see website",
             "image": "/img/bicture_umb.webp"
@@ -29,14 +29,16 @@
             "tech": [
                 { "lang": "React" },
                 { "lang": "TSX" },
-                { "lang": "Weather API Intergration" }
+                { "lang": "API" }
             ],
             "detail": [
-                "Website ini dibuat untuk penggunaan personal, dimana hal-hal didalamnya secara harcode ditulis untuk dan kemudahan bagi saya sendiri",
-                "Dengan menggunakan Teknologi React + TSX serta dapat meyimpan data di dalam cache browser",
-                "<ol><li>Pemilihan level prioritas task</li><li>Deadline untuk task</li><li>Penyimpanan data di cache browser</li><li>Integrasi Weather API</li></ol>"
+                "DoIt adalah aplikasi To Do List website yang dibuat dengan React dan TypeScript. Aplikasi ini memungkinkan pengguna untuk membuat, mengelola, dan melacak tugas-tugas mereka dengan fitur prioritas dan deadline. Aplikasi ini juga dilengkapi dengan clock dan weather widget, serta mendukung offline mode melalui PWA.",
+                "<strong>Languages</strong> <ul> <li>JavaScript</li> <li>TypeScript</li> <li>CSS</li> <li>HTML</li> </ul>",
+                "<strong>Framework / Runtime</strong> <ul> <li>React 19</li> <li>TypeScript 6.0</li> <li>Vite 8</li> </ul>",
+                "<strong>Notable Libraries</strong> <ul> <li><strong>Dexie</strong> - IndexedDB wrapper</li> <li> <strong>dexie-react-hooks</strong> - React integration </li> <li><strong>React Router DOM</strong> - Navigation</li> <li><strong>Lucide React</strong> - Icons</li> <li><strong>vite-plugin-pwa</strong> - PWA support</li> </ul>"
+                
             ],
-            "textBtn": "see the code",
+            "textBtn": "see website",
             "image": "/img/doit.webp"
         },
         {
@@ -51,8 +53,10 @@
                 { "lang": "Kemenag API" }
             ],
             "detail": [
-                "Website pembelajaran Al-Quran ini dikembangkan secara berkelompok yang dimana ini salah satu tugas proyek dalam ujian ahkir semester",
-                "<ol><li>Ayat-ayat Al-Quran</li><li>Daftar huruf Hijaiyah</li><li>Angka arab</li><li>Jadwal sholat</li><li>Pengumuman</li></ol>"
+                "<p>Riyadh Al-Quran adalah website pembaca Al-Quran digital yang dirancang dengan antarmuka modern dan responsif menggunakan HTML, CSS, dan JavaScript vanilla. Aplikasi ini menyediakan akses mudah untuk membaca, mengerti, dan mempelajari Al-Quran dengan fitur pencarian cepat, kontrol ukuran font yang fleksibel, tampilan teks Arab yang elegan, serta terjemahan Bahasa Indonesia yang akurat. Dengan desain yang indah dan fungsionalitas yang sempurna, Riyadh Al-Quran membantu umat Muslim di ",
+                "<strong>Languages</strong> <ul> <li>JavaScript</li> <li>PHP</li> <li>CSS</li> <li>MYSQL</li> <li>API Kemenag</li></ul>",
+                "<strong>Framework / Runtime</strong> <ul> <li>MariaDB</li></ul>",
+                "<strong>Notable Libraries</strong> <ul> <li>Bootstrap</li></ul>"
             ],
             "textBtn": "see the code",
             "image": "/img/noimg.webp"
@@ -68,9 +72,11 @@
                 { "lang": "MYSQL" }
             ],
             "detail": [
-                "Website ini membantu UMKM dalam menjualkan hasil karyanya, mereka menyambut positif penggunaan teknologi dalam kehidupan sehari-hari",
-                "<ol><li>Lihat katalog barang yang dijual</li><li>Mengetahui harga secara langsung</li><li>Memilih dan membeli beberapa barang sekaligus</li></ol>",
-                "Produk berkualitas tinggi dengan <strong>harga terjangkau</strong>"
+                "Website ini membantu UMKM dalam menjualkan hasil karyanya, mereka menyambut positif penggunaan teknologi dalam kehidupan sehari-hari. <br> Kemudahan yang ditawarkan ke pengguna seperti dapat meliat katalog barang yang dijual, mengetahui harga secara langsung, serta memilih dan membeli beberapa barang sekaligus",
+                "<strong>Languages</strong> <ul><li>PHP</li> <li>Javascript</li> <li>CSS</li> <li>MYSQL</li></ul>",
+                "<strong>Framework / Runtime</strong> <ul><li>Laragon</li></ul>",
+                "<strong>Notable Libraries</strong> <ul> <li>Flaticon</li></ul>"
+                
             ],
             "textBtn": "see the code",
             "image": "/img/loomnyarn.webp"

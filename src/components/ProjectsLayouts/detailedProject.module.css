@@ -41,13 +41,14 @@
 
 .sticky {
     position: sticky;
-    top: 0;
+    top: 42px;
     width: 25vw;
-    height: 100%;
+    height: calc(100vh - 42px);
     max-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 1px;
+    
 }
 
 .sticky a {
@@ -122,15 +123,26 @@
     flex: 1;
     height: auto;
     gap: 1rem;
-
+    
 }
 
-.details ol {
+.details > *{
+    line-height: 1.25 !important;
+    font-size: 1.25rem;
+}
+
+.details :is(ul) {
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.details :is(ul) li {
+    line-height: 1.25;
 }
 
 .con_article main .con_main p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -146,9 +158,9 @@
 }
 
 .side {
-    max-width: 100vh;
+    max-width: calc(100vh - 42px);
     position: sticky;
-    top: 0;
+    top: 42px;
 }
 
 @media (max-width:747px) {

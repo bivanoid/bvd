@@ -18,6 +18,7 @@ export default function DetailedProject() {
       <div className={s.con_article}>
         <div className={s.header}>
           <h1>{project?.name}</h1>
+          <h3>{project?.type}</h3>
         </div>
         <main>
           <div className={s.con_sticky}>
