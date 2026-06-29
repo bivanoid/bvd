@@ -56,6 +56,32 @@ main {
   color: var(--cl3);
 }
 
+.con_alert {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(42px + 2rem);
+    scale: 1;
+    width: fit-content;
+    max-width: calc(100% - var(--padding) * 2);
+    transition: 0.5s ease-in-out;
+    z-index: 998;
+}
+
+.dot {
+    animation: dot 1s linear infinite;
+}
+
+@keyframes dot {
+	0% {
+        opacity: 0.2;
+	} 50% {
+	opacity: 1;
+	} 100% {
+	opacity: 0.2;
+	}
+}
+
 @media (max-width:747px) {
   main {
     margin-inline: 1rem;

@@ -1,0 +1,21 @@
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding:0.5rem;
+    background-color: var(--cl-prim);
+    border: 1px solid var(--cl-border);
+    border-top: 0px solid var(--cl-border);
+    font-weight: 600;
+}
+
+.status {
+    width: 0.75rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.alert p:nth-child(3) {
+    color: var(--t2);
+}
