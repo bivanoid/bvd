@@ -1,17 +1,17 @@
-import Footer from "../components/HomeLayouts/Footer"
-import Navbar from "../components/CommontLayouts/Navbar"
-import Content from "../components/HomeLayouts/Content"
-import Dashboard from "../components/HomeLayouts/Dashboard"
+import Footer from "../components/HomeLayouts/Footer";
+import Navbar from "../components/CommontLayouts/Navbar";
+import Content from "../components/HomeLayouts/Content";
+import Dashboard from "../components/HomeLayouts/Dashboard";
 
 export default function Home() {
   return (
     <div>
-      <Navbar ttl="bivanoid" backTo="/"/>
+      <Navbar ttl="bivanoid.site" backTo="/" />
       <main>
-        <Dashboard/>
-        <Content/>
+        <Dashboard />
+        <Content />
       </main>
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }

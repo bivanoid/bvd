@@ -7,7 +7,7 @@ export default function About() {
                     Hello! My name is Firdhan Abivandya <span className="red">★</span>. I am from
                     Surakarta, Central Java Province, Indonesia.
                     <br />
-                    I like to translate my imagination into code and implement it.
+                    I like to pour my imagination into code and implement it.
                 </h2>
                 <ul>
                     <li><span className="red">[</span>University<span className="red">]</span></li>

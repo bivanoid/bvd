@@ -12,12 +12,11 @@ export default function Contact() {
       setValidation(true);
     } else {
       setValidation(false);
-      
+
       window.open(
-          `https://wa.me/${noWa}?text=Halo, saya ${useName} \n \n ${useDesc}`,
-          "_blank"
+        `https://wa.me/${noWa}?text=Halo, saya ${useName} \n \n ${useDesc}`,
+        "_blank",
       );
-      
 
       setUseName("");
       setUseDesc("");
@@ -27,43 +26,45 @@ export default function Contact() {
   useEffect(() => {
     if (useValidation) {
       const timer = setTimeout(() => {
-        setValidation(false)
-      }, 10000)
+        setValidation(false);
+      }, 10000);
       return () => clearTimeout(timer);
     }
   }, [useValidation]);
 
   useEffect(() => {
     if (useValidation) {
-      setCount(10)
+      setCount(10);
 
       const interval = setInterval(() => {
         setCount((prev: number) => {
           if (prev < 1) {
-            clearInterval(interval)
-            return 0
+            clearInterval(interval);
+            return 0;
           }
-          return prev - 1
-        })
-      }, 1000)
+          return prev - 1;
+        });
+      }, 1000);
 
-      return () => clearInterval(interval)
+      return () => clearInterval(interval);
     }
-  }, [useValidation])
+  }, [useValidation]);
   return (
     <section className={s.contact}>
       <div
-        style={
-          {
-            top: useValidation ? "calc(42px)" : "-100%",
-            scale: useValidation ? "1" : "0.2",
-            opacity: useValidation ? "1" : "0.2"
-          }
-        }
+        style={{
+          top: useValidation ? "calc(42px)" : "-100%",
+          scale: useValidation ? "1" : "0.2",
+          opacity: useValidation ? "1" : "0.2",
+        }}
         onClick={() => setValidation(false)}
         className="con_alert"
       >
-        <Alert typeStatus={1} textAlert="Don't leave this form empty" count={useCount}/>
+        <Alert
+          typeStatus={1}
+          textAlert="Don't leave this form empty"
+          count={useCount}
+        />
       </div>
       <div className={s.con_ttl}>
         <h2>

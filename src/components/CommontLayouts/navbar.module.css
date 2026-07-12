@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-inline: var(--padding);
     align-items: center;
     width: 100%;

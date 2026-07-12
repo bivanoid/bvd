@@ -4,8 +4,10 @@ import { ReactLenis } from 'lenis/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import DetailedProject from './components/ProjectsLayouts/DetailedProject'
+import ScrollRestoration from './hooks/ScrollRestoration';
 
 function App() {
+  
   return (
     <ReactLenis
       root
@@ -15,6 +17,7 @@ function App() {
         wheelMultiplier: 1,
       }}>
       <BrowserRouter>
+        <ScrollRestoration/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/projects/:id" element={<DetailedProject />} />
