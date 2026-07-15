@@ -26,6 +26,12 @@
     font-size: clamp(3rem, 5vw, 7rem);
     text-align: center;
 }
+.con_article .header h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--cl2);
+}
 
 .con_article main {
     display: flex;
@@ -114,7 +120,7 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-
+    width: 100%;
 }
 
 .details {
@@ -146,6 +152,29 @@
     font-weight: 600;
 }
 
+:is(.technology, .library) h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--t2);
+}
+
+:is(.technology, .library) ol {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+:is(.technology, .library) ol li::marker {
+  color: var(--t2); 
+  font-weight: bold; 
+}
+
+:is(.technology, .library) li {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 .con_article main .con_main button {
     display: grid;
     place-items: center;
@@ -174,5 +203,6 @@
 
     .sticky {
         width: 100%;
+        height: fit-content;
     }
 }

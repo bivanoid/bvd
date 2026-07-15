@@ -2,12 +2,22 @@ import './App.css'
 import 'lenis/dist/lenis.css'
 import { ReactLenis } from 'lenis/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home'
-import DetailedProject from './components/ProjectsLayouts/DetailedProject'
 import ScrollRestoration from './hooks/ScrollRestoration';
 
+const Home = lazy(() => import("./pages/Home"));
+const DetailedProject = lazy(() => import("./components/ProjectsLayouts/DetailedProject"));
+import { lazy, Suspense } from 'react';
+
+function Loading() {
+  return (
+    <div className='loading_page'>
+      <p>Loading</p>
+    </div>
+  )
+}
+
 function App() {
-  
+
   return (
     <ReactLenis
       root
@@ -16,13 +26,15 @@ function App() {
         smoothWheel: true,
         wheelMultiplier: 1,
       }}>
-      <BrowserRouter>
-        <ScrollRestoration/>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path="/projects/:id" element={<DetailedProject />} />
-        </Routes>
-      </BrowserRouter>
+      <Suspense fallback={<Loading />}>
+        <BrowserRouter>
+          <ScrollRestoration/>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path="/projects/:id" element={<DetailedProject />} />
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
     </ReactLenis>
 
   )

@@ -92,6 +92,11 @@
     color: var(--cl-prim);
 } */
 
+.type {
+    font-size: 1rem;
+    color: var(--cl2);
+}
+
 
 @media (max-width:747px) {
     .projects .con_ttl h2 {

@@ -1,85 +1,98 @@
 {
     "projects": [
         {
-            "id": "bicture",
-            "name": "Bicture",
-            "link": "https://github.com/bivanoid/bicture-app",
-            "desc": "Mini Social Media Apps",
-            "type": "Application",
-            "tech": [
-                { "lang": "JAVA" },
-                { "lang": "XML" },
-                { "lang": "FIREBASE" }
-            ],
-            "detail": [
-                "Bicture adalah aplikasi galeri foto native Android yang dirancang untuk mengelola, berbagi, dan berinteraksi dengan foto. Dibangun dengan Java dan Firebase, aplikasi ini menawarkan pengalaman pengguna modern dengan fitur sosial seperti 'Neat' system (pengganti like), bookmark, komentar, dan follow untuk membangun komunitas fotografer. Stack",
-                "<strong>Languages</strong><ul><li>JavaScript</li></ul>",
-                "<strong>Framework / Runtime</strong> <ul> <li>Android SDK (minSdk 24, targetSdk 33)</li> <li>Gradle 8.6.0</li> </ul>",
-                "<strong>Notable Libraries</strong> <ul> <li><strong>Firebase</strong> - (Realtime Database, Storage, Authentication) — backend & cloud storage</li> <li><strong>Glide (v4.15.1)</strong> image loading dan caching</li> <li><strong>uCrop (v2.2.8)</strong> - crop & edit foto</li> </ul>"
-            ],
-            "textBtn": "see website",
-            "image": "/img/bicture_umb.webp"
+          "id": "loomnyarn",
+          "name": "Loom & Yarn",
+          "link": "https://github.com/bivanoid/Loom-Yarn",
+          "header_desc": "Website UMKM Boneka Rajut",
+          "type": "Web",
+          "language": [
+              { "language_name": "PHP" },
+              { "language_name": "MYSQL" }
+          ],
+          "short_desc": "Sebuah website umkm penjualan boneka hasil rajutan, menampilkan katalog beberapa barang yang dijual dengan fitur simpan ke keranjang sebelum dibeli. metode pembelian menggunakan chat whatsapp yang dimana nama barang, jumlah, subtotal dan total harga akan dikirimkan dengan teks ke nomor whatsapp penjual",
+          "detail": [
+              { "technology":
+                [
+                  { "technology_name" : "PHP native" },
+                  { "technology_name" : "Mysql as Database" },
+                  { "technology_name" : "InfinityFree as Hosting server" }
+                ]
+              },
+              { "library":
+                [
+                  { "library_detail": "none"}
+                ]
+              }
+          ],
+          "textBtn": "see the code",
+          "image": "/img/loomnyarn.webp"
+        }, 
+        {
+          "id": "bicture",
+          "name": "Bicture App",
+          "link": "https://github.com/bivanoid/bicture-app",
+          "header_desc": "Aplikasi sosial media",
+          "type": "App",
+          "language": [
+              { "language_name": "JAVA" },
+              { "language_name": "XML" }
+          ],
+          "short_desc": "Aplikasi sosial media bersekala kecil yang berintregrasi dengan firebase database",
+          "detail": [
+              { "technology":
+                [
+                  { "technology_name" : "JAVA" },
+                  { "technology_name" : "Firebase" },
+                  { "technology_name" : "Firebase Storage" },
+                  { "technology_name" : "Material Design + Customization" }
+                ]
+              },
+              { "library":
+                [
+                  { "library_detail": "Firebase (BOM v33.6.0)"},
+                  { "library_detail": "Glide"},
+                  { "library_detail": "glide-transformations"},
+                  { "library_detail": "uCrop"},
+                  { "library_detail": "PhotoView"},
+                  { "library_detail": "Material Components"},
+                  { "library_detail": "Lottie"}
+                ]
+              }
+          ],
+          "textBtn": "see the code",
+          "image": "/img/bicture_umb.webp"
         },
         {
-            "id": "doit",
-            "name": "DoIt",
-            "link": "https://bivanoid.github.io/DoIt/",
-            "desc": "Website Todolist Sederhana",
-            "type": "Website",
-            "tech": [
-                { "lang": "React" },
-                { "lang": "TSX" },
-                { "lang": "API" }
-            ],
-            "detail": [
-                "DoIt adalah aplikasi To Do List website yang dibuat dengan React dan TypeScript. Aplikasi ini memungkinkan pengguna untuk membuat, mengelola, dan melacak tugas-tugas mereka dengan fitur prioritas dan deadline. Aplikasi ini juga dilengkapi dengan clock dan weather widget, serta mendukung offline mode melalui PWA.",
-                "<strong>Languages</strong> <ul> <li>JavaScript</li> <li>TypeScript</li> <li>CSS</li> <li>HTML</li> </ul>",
-                "<strong>Framework / Runtime</strong> <ul> <li>React 19</li> <li>TypeScript 6.0</li> <li>Vite 8</li> </ul>",
-                "<strong>Notable Libraries</strong> <ul> <li><strong>Dexie</strong> - IndexedDB wrapper</li> <li> <strong>dexie-react-hooks</strong> - React integration </li> <li><strong>React Router DOM</strong> - Navigation</li> <li><strong>Lucide React</strong> - Icons</li> <li><strong>vite-plugin-pwa</strong> - PWA support</li> </ul>"
-                
-            ],
-            "textBtn": "see website",
-            "image": "/img/doit.webp"
-        },
-        {
-            "id": "riyadh",
-            "name": "Riyadh Learning",
-            "link": "https://github.com/bivanoid/Riyadh-Al-quran",
-            "desc": "Website Pembelajaran Al-Quran",
-            "type": "Website",
-            "tech": [
-                { "lang": "PHP" },
-                { "lang": "MYSQL" },
-                { "lang": "Kemenag API" }
-            ],
-            "detail": [
-                "<p>Riyadh Al-Quran adalah website pembaca Al-Quran digital yang dirancang dengan antarmuka modern dan responsif menggunakan HTML, CSS, dan JavaScript vanilla. Aplikasi ini menyediakan akses mudah untuk membaca, mengerti, dan mempelajari Al-Quran dengan fitur pencarian cepat, kontrol ukuran font yang fleksibel, tampilan teks Arab yang elegan, serta terjemahan Bahasa Indonesia yang akurat. Dengan desain yang indah dan fungsionalitas yang sempurna, Riyadh Al-Quran membantu umat Muslim di ",
-                "<strong>Languages</strong> <ul> <li>JavaScript</li> <li>PHP</li> <li>CSS</li> <li>MYSQL</li> <li>API Kemenag</li></ul>",
-                "<strong>Framework / Runtime</strong> <ul> <li>MariaDB</li></ul>",
-                "<strong>Notable Libraries</strong> <ul> <li>Bootstrap</li></ul>"
-            ],
-            "textBtn": "see the code",
-            "image": "/img/noimg.webp"
-        },
-        {
-            "id": "loomnyarn",
-            "name": "Loom & Yarn",
-            "link": "https://github.com/bivanoid/Loom-Yarn",
-            "desc": "Website UMKM Boneka Rajut",
-            "type": "Website",
-            "tech": [
-                { "lang": "PHP" },
-                { "lang": "MYSQL" }
-            ],
-            "detail": [
-                "Website ini membantu UMKM dalam menjualkan hasil karyanya, mereka menyambut positif penggunaan teknologi dalam kehidupan sehari-hari. <br> Kemudahan yang ditawarkan ke pengguna seperti dapat meliat katalog barang yang dijual, mengetahui harga secara langsung, serta memilih dan membeli beberapa barang sekaligus",
-                "<strong>Languages</strong> <ul><li>PHP</li> <li>Javascript</li> <li>CSS</li> <li>MYSQL</li></ul>",
-                "<strong>Framework / Runtime</strong> <ul><li>Laragon</li></ul>",
-                "<strong>Notable Libraries</strong> <ul> <li>Flaticon</li></ul>"
-                
-            ],
-            "textBtn": "see the code",
-            "image": "/img/loomnyarn.webp"
+          "id": "doit",
+          "name": "DoIt!",
+          "link": "https://github.com/bivanoid/DoIt",
+          "header_desc": "Web (PWA) to do list",
+          "type": "App",
+          "language": [
+              { "language_name": "Typescript" }
+          ],
+          "short_desc": "Website yang digunakan untuk mencatat hal-hal yang akan dilakukan agar semua berjalan sesuai dengan rencana",
+          "detail": [
+              { "technology":
+                [
+                  { "technology_name" : "React.JS" },
+                  { "technology_name" : "Vercel" },
+                  { "technology_name" : "Weather API Intergrations" },
+                  { "technology_name" : "vite-plugin-pwa" }
+                ]
+              },
+              { "library":
+                [
+                  { "library_detail": "dexie 4.4.3"},
+                  { "library_detail": "dexie-react-hooks 4.4.0"},
+                  { "library_detail": "lucide-react"},
+                  { "library_detail": "react-router-dom"}
+                ]
+              }
+          ],
+          "textBtn": "see the code",
+          "image": "/img/bicture_umb.webp"
         }
     ]
 }
