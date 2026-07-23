@@ -25,7 +25,7 @@
                 ]
               }
           ],
-          "textBtn": "see the code",
+          "textBtn": "see source code",
           "image": "/img/loomnyarn.webp"
         }, 
         {
@@ -60,15 +60,15 @@
                 ]
               }
           ],
-          "textBtn": "see the code",
+          "textBtn": "see source code",
           "image": "/img/bicture_umb.webp"
         },
         {
           "id": "doit",
           "name": "DoIt!",
-          "link": "https://github.com/bivanoid/DoIt",
+          "link": "https://doit-xi-mocha.vercel.app/",
           "header_desc": "Web (PWA) to do list",
-          "type": "App",
+          "type": "PWA",
           "language": [
               { "language_name": "Typescript" }
           ],
@@ -91,8 +91,39 @@
                 ]
               }
           ],
-          "textBtn": "see the code",
-          "image": "/img/bicture_umb.webp"
+          "textBtn": "visit website",
+          "image": "/img/doit.webp"
+        },
+        {
+          "id": "bynnashop",
+          "name": "Bynnashop",
+          "link": "https://bynnashop.vercel.app/",
+          "header_desc": "Web untuk menjual hasil masakan",
+          "type": "Web",
+          "language": [
+              { "language_name": "Typescript" }
+          ],
+          "short_desc": "Web UMKM pada umumnya yang digunakan untuk menjual hasil masakan, memiliki fitur keranjang juga didalamnya",
+          "detail": [
+              { "technology":
+                [
+                  { "technology_name" : "React.JS" },
+                  { "technology_name" : "Vercel" },
+                  { "technology_name" : "Supabase Integration" },
+                  { "technology_name" : "Supabase Storage" }
+                ]
+              },
+              { "library":
+                [
+                  { "library_detail": "phosphor-icons/react 2.1.10 (duotone)"},
+                  { "library_detail": "supabase-js 2.110.2"},
+                  { "library_detail": "gsap 3.15.0"},
+                  { "library_detail": "react-router-dom 7.18.0"}
+                ]
+              }
+          ],
+          "textBtn": "see source code",
+          "image": "/img/bynnashop.webp"
         }
     ]
 }

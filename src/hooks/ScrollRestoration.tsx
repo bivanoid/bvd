@@ -30,7 +30,7 @@ export default function ScrollRestoration() {
       if (savedPos !== undefined && savedPos > 0) {
         lenis.scrollTo(savedPos, { immediate: false, duration: 0 });
       }
-    }, 500);
+    }, 300);
 
     return () => clearTimeout(timer);
   }, [location.pathname, lenis]);

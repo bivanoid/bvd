@@ -1,7 +1,6 @@
 import './App.css'
 import 'lenis/dist/lenis.css'
 import { ReactLenis } from 'lenis/react'
-import { useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollRestoration from './hooks/ScrollRestoration';
 
