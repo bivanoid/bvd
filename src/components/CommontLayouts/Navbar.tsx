@@ -16,11 +16,11 @@ export default function Navbar({
         <nav className={s.nav}>
             {/*<p>. :</p>*/}
             
-            <div className={s.logo}>
+            <Link to={backTo} className={s.logo}>
                 {nav ? 
-                    <Link className={s.back} to={backTo}><span className="red">[</span>back<span className="red">]</span></Link> : ""
+                    <div className={s.back} ><span className="red">[</span>back<span className="red">]</span></div> : ""
                 }
-                {ttl}</div>
+                {ttl}</Link>
             {/*<p>: .</p>*/}
             
         </nav>

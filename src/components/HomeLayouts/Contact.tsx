@@ -14,7 +14,7 @@ export default function Contact() {
       setValidation(false);
 
       window.open(
-        `https://wa.me/${noWa}?text=Halo, saya ${useName} \n \n ${useDesc}`,
+        `https://wa.me/${noWa}?text=Halo, saya ${useName}%0A%0A${useDesc}`,
         "_blank",
       );
 

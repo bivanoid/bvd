@@ -154,16 +154,16 @@
 }
 
 :is(.technology, .library) h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
-    color: var(--t2);
+    color: var(--t1);
 }
 
 :is(.technology, .library) ol {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 :is(.technology, .library) ol li::marker {
@@ -172,7 +172,7 @@
 }
 
 :is(.technology, .library) li {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -194,12 +194,24 @@
 }
 
 @media (max-width:747px) {
+	.con_article {
+		margin-inline: 1rem;
+	}
+	
     .con_article main {
         flex-direction: column;
     }
 
     .con_article main .con_main {
         padding-inline: var(--padding);
+    }
+
+    .con_article .header {
+    margin-top: 42px;
+    }
+
+    .con_article .header h1 {
+   	font-size: 1.75rem;
     }
 
     .sticky {

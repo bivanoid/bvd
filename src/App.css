@@ -99,4 +99,8 @@ main {
   main {
     margin-inline: 1rem;
   }
+
+  .con_alert {
+  width: 100%;
+  }
 }
