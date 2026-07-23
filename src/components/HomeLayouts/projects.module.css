@@ -38,6 +38,7 @@
     gap: 1px;
 }
 
+
 .projects .con_items .item {
     width: 100%;
     background-color: var(--cl-prim);
@@ -45,6 +46,10 @@
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+}
+
+.projects .con_items .item:hover {
+	background-color: var(--c1);
 }
 
 .projects .con_items .item .con_name {

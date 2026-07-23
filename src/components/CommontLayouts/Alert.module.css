@@ -7,6 +7,7 @@
     background-color: var(--cl-prim);
     border: 1px solid var(--cl-border);
     border-top: 0px solid var(--cl-border);
+    background-color: var(--c1);
     font-weight: 600;
 }
 

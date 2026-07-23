@@ -49,8 +49,8 @@
     place-items: center;
     border-top: 1px solid var(--cl-border);
     margin-top: auto;
-    transform: translateY(-10px);
     font-weight: 800;
+    background-color: var(--c1);
 }
 
 @media (max-width:747px) {

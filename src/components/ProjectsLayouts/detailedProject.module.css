@@ -67,6 +67,7 @@
     padding: var(--padding);
     background-color: var(--cl-prim);
     font-weight: 600;
+    background-color: var(--c1);
 }
 
 .con_sticky_content {

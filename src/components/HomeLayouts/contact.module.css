@@ -59,8 +59,9 @@
     width: 100px;
     border: none;
     font-family: var(--f1);
-    background-color: var(--cl-prim);
+    background-color: var(--c1);
     border-left: 1px solid var(--cl-border);
+    text-orientation: sideways;
     font-weight: 600;
     color: var(--cl2);
 }
