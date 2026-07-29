@@ -6,7 +6,7 @@ export default function Projects() {
 	const projects = DataProjects.projects;
 
 	return (
-		<section className={s.projects}>
+		<section id="project" className={s.projects}>
 			<div className={s.con_ttl}>
 				<h2>
 					Here are some selected projects I’ve worked on{" "}

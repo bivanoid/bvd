@@ -53,9 +53,9 @@ export default function Contact() {
     <section className={s.contact}>
       <div
         style={{
-          top: useValidation ? "calc(42px)" : "-100%",
-          scale: useValidation ? "1" : "0.2",
-          opacity: useValidation ? "1" : "0.2",
+          bottom: useValidation ? "0" : "-100%",
+          scale: useValidation ? "1" : "1",
+          opacity: useValidation ? "1" : "0",
         }}
         onClick={() => setValidation(false)}
         className="con_alert"

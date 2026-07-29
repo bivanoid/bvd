@@ -2,11 +2,11 @@ import './App.css'
 import 'lenis/dist/lenis.css'
 import { ReactLenis } from 'lenis/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollRestoration from './hooks/ScrollRestoration';
+import { lazy, Suspense } from 'react';
+import { useScrollToTop } from './hooks/useScrollToTop';
 
 const Home = lazy(() => import("./pages/Home"));
 const DetailedProject = lazy(() => import("./components/ProjectsLayouts/DetailedProject"));
-import { lazy, Suspense } from 'react';
 
 function Loading() {
   return (
@@ -16,8 +16,18 @@ function Loading() {
   )
 }
 
-function App() {
+function AppRoutes() {
+  useScrollToTop(); // Letakkan di dalam BrowserRouter
+  
+  return (
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path="/projects/:id" element={<DetailedProject />} />
+    </Routes>
+  )
+}
 
+function App() {
   return (
     <ReactLenis
       root
@@ -28,15 +38,10 @@ function App() {
       }}>
       <Suspense fallback={<Loading />}>
         <BrowserRouter>
-          <ScrollRestoration/>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path="/projects/:id" element={<DetailedProject />} />
-          </Routes>
+          <AppRoutes />
         </BrowserRouter>
       </Suspense>
     </ReactLenis>
-
   )
 }
 

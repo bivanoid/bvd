@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
     padding: var(--padding);
+    padding-bottom: calc(42px + 2rem);
     display: flex;
     flex-direction: column;
     gap: 1rem;

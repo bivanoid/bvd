@@ -23,13 +23,14 @@
 }
 
 .con_article .header h1 {
-    font-size: clamp(3rem, 5vw, 7rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
+    margin-top: 1rem;
 }
 .con_article .header h3 {
     font-size: 1.25rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: var(--cl2);
 }
 
@@ -47,13 +48,14 @@
 
 .sticky {
     position: sticky;
-    top: 42px;
+    top: 0;
     width: 25vw;
     height: calc(100vh - 42px);
     max-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 1px;
+    margin-bottom: 42px;
     
 }
 
@@ -67,7 +69,7 @@
     padding: var(--padding);
     background-color: var(--cl-prim);
     font-weight: 600;
-    background-color: var(--c1);
+    background-color: var(--cl1);
 }
 
 .con_sticky_content {
@@ -117,6 +119,7 @@
 .con_article main .con_main {
     background-color: var(--cl-prim);
     padding-block: var(--padding);
+    padding-bottom: calc(var(--padding) + 42px);
     padding-inline: 15vw;
     display: flex;
     flex-direction: row;
@@ -188,9 +191,9 @@
 }
 
 .side {
-    max-width: calc(100vh - 42px);
+    max-width: calc(100vh);
     position: sticky;
-    top: 42px;
+    top: 0px;
 }
 
 @media (max-width:747px) {
@@ -206,10 +209,6 @@
         padding-inline: var(--padding);
     }
 
-    .con_article .header {
-    margin-top: 42px;
-    }
-
     .con_article .header h1 {
    	font-size: 1.75rem;
     }
@@ -217,5 +216,6 @@
     .sticky {
         width: 100%;
         height: fit-content;
+        margin-bottom: 0;
     }
 }

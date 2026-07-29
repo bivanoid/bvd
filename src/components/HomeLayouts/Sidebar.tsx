@@ -2,7 +2,7 @@ import s from "./sidebar.module.css";
 
 export default function Sidebar() {
     return(
-        <section className={s.sidebar}>
+        <section id="sidebar"  className={s.sidebar}>
                 <h2>Firdhan <br /> Abivandya<span className="red">.</span></h2>
                 <h3>Information</h3>
                 <ul>

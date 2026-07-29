@@ -49,7 +49,7 @@
 }
 
 .projects .con_items .item:hover {
-	background-color: var(--c1);
+	background-color: var(--cl1);
 }
 
 .projects .con_items .item .con_name {

@@ -1,6 +1,6 @@
 .sidebar {
     width: 25vw;
-    height: 100vh;
+    height: calc(100vh - 42px);
     background-color: var(--cl-prim);
     position: sticky;
     top: 0;
@@ -11,8 +11,8 @@
 
 .sidebar h2 {
     font-size: clamp(2rem, 10vw, 2.25rem);
-    padding-top: var(--padding);
-    padding-inline: 2rem;
+    padding-top: calc(var(--padding) * 2);
+    margin-inline: var(--margin);
 }
 .sidebar h3 {
     color: var(--t1);
@@ -50,12 +50,16 @@
     border-top: 1px solid var(--cl-border);
     margin-top: auto;
     font-weight: 800;
-    background-color: var(--c1);
+    background-color: var(--cl1);
 }
 
 @media (max-width:747px) {
     .sidebar {
         width: 100%;
         height: fit-content;
+    }
+
+    .sidebar h2 {
+   	padding-top: calc(var(--padding) * 2);
     }
 }

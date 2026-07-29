@@ -1,106 +1,116 @@
 @font-face {
-  font-family: "sg";
-  src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2) format(woff2);
+	font-family: "sg";
+	src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2) format(woff2);
 }
 
 :root {
-  --f1: "sg";
-  /* --cl-prim: #121420; */
-  --cl-prim: #04050d;
-  /* --cl-prim: #0A0A0A; */
-  --cl-sec: #f7f7f7;
-  --cl-border: #262626;
+	--f1: "sg";
+	/* --cl-prim: #121420; */
+	--cl-prim: #04050d;
+	/* --cl-prim: #0A0A0A; */
+	--cl-sec: #f7f7f7;
+	--cl-border: #262626;
 
-  --c1: #0D1117;
+	--cl1: #0d1117;
 
-  --t1: #eaeaea;
-  --t2: #7A7A7A;
+	--t1: #eaeaea;
+	--t2: #7a7a7a;
 
-  --padding: 2em;
-  --margin: 2em;
+	--padding: 2rem;
+	--margin: 2rem;
 
-  --cl2: #73BCEC;
-  --cl3: #F77171;
+	--outer-padding: 2em;
+	--inner-padding: 2em;
+/*
+	@media (max-width:747px) {
+		--padding: 2rem;
+	}*/
+
+	--cl2: #73bcec;
+	--cl3: #f77171;
 }
 
 * {
-  color: var(--cl-sec);
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  line-height: 0.85;
-  outline: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  font-family: var(--f1);
+	color: var(--cl-sec);
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 0.85;
+	outline: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	font-family: var(--f1);
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 body {
-  background: var(--cl-prim);
-  font-family: var(--f1);
+	background: var(--cl-prim);
+	font-family: var(--f1);
 }
 
 main {
-  background-color: var(--cl-border);
-  margin-inline: var(--margin);
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
+	background-color: var(--cl-border);
+	margin-inline: var(--padding);
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
 }
 
 .loading_page {
-    background-color: var(--cl1);
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100vh;
+	background-color: var(--cl1);
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .loading_page p {
-    font-weight: bold;
-    font-size: 2rem;
+	font-weight: bold;
+	font-size: 2rem;
 }
 
 .red {
-  color: var(--cl3);
+	color: var(--cl3);
 }
 
 .con_alert {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: calc(42px + 2rem);
-    scale: 1;
-    width: fit-content;
-    max-width: calc(100% - var(--padding) * 2);
-    transition: 0.5s ease-in-out;
-    z-index: 998;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	scale: 1;
+	width: fit-content;
+	height: 42px;
+	max-width: calc(100% - var(--padding) * 2);
+	transition: 0.5s ease-in-out;
+	z-index: 9998;
 }
 
 .dot {
-    animation: dot 1s linear infinite;
+	animation: dot 1s linear infinite;
 }
 
 @keyframes dot {
 	0% {
-        opacity: 0.2;
-	} 50% {
-	opacity: 1;
-	} 100% {
-	opacity: 0.2;
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
 	}
 }
 
-@media (max-width:747px) {
-  main {
-    margin-inline: 1rem;
-  }
+@media (max-width: 747px) {
+	main {
+		margin-inline: 1rem;
+	}
 
-  .con_alert {
-  width: 100%;
-  }
+	.con_alert {
+		width: 100%;
+	}
 }
