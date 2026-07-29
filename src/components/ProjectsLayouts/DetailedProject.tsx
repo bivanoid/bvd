@@ -16,7 +16,7 @@ export default function DetailedProject() {
 
 	return (
 		<section className={s.article}>
-			<Navbar ttl={`: ${project.id}`} nav={true} backTo={"/"} />
+			<Navbar ttl={`to home`} nav={true} backTo={"/"} />
 			<div className={s.con_article}>
 				<div className={s.header}>
 					<Logo/>

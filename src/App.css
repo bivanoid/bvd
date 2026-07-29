@@ -59,6 +59,10 @@ main {
 	gap: 1px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .loading_page {
 	background-color: var(--cl1);
 	display: grid;
@@ -92,6 +96,8 @@ main {
 .dot {
 	animation: dot 1s linear infinite;
 }
+
+
 
 @keyframes dot {
 	0% {
