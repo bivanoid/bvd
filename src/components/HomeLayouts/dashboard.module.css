@@ -85,9 +85,11 @@
 	height: 2px;
 	background-color: var(--cl3);
 	position: relative;
-	display: grid;
-	place-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
 
 .con_link .separator::before {
 	content: "";

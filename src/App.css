@@ -59,9 +59,9 @@ main {
 	gap: 1px;
 }
 
-a {
+/*a {
 	text-decoration: none;
-}
+}*/
 
 .loading_page {
 	background-color: var(--cl1);

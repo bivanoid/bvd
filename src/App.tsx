@@ -17,7 +17,7 @@ function Loading() {
 }
 
 function AppRoutes() {
-  useScrollToTop(); // Letakkan di dalam BrowserRouter
+  useScrollToTop();
   
   return (
     <Routes>

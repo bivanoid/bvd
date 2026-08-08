@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar ttl={isAtBottom ? "Much appreciated :D" : "keep scrolling :O"} backTo="/" />
+      <Navbar ttl={isAtBottom ? "The end" : "keep scrolling"} backTo="/" />
       <main>
         <Dashboard />
         <Content />

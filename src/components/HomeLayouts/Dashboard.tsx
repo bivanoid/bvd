@@ -26,7 +26,7 @@ export default function Dashboard() {
 					<Logo />
 				</div>
 				<div className={s.btm}>
-					<p>Hii Visitors : . </p>
+					<p>Hii Visitors,</p>
 					<h1>
 						Welcome to <br />
 						My Portfolio
@@ -38,7 +38,7 @@ export default function Dashboard() {
 						</p>
 						<span className={s.separator}></span>
 						<p onClick={toProjects}>
-							<span className="red">[</span>Project
+							<span className="red">[</span>to Projects
 							<span className="red">]</span>
 						</p>
 					</div>

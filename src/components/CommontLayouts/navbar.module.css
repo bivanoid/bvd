@@ -59,3 +59,42 @@
 .nav p:nth-of-type(2) {
     rotate: 180deg;
 }
+
+.back {
+	display: flex;
+	align-items: center;
+}
+
+.arrow_back {
+	width: 2rem;
+	height: 2px;
+	margin-right: 0.5rem;
+	display: block;
+	background-color: var(--cl3);
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.arrow_back::before {
+	content: '';
+	position: absolute;
+	width: 0.5rem;
+	aspect-ratio: 1/1;
+	border: 2px solid var(--cl3);
+	border-right: none;
+	border-bottom: none;
+	transform: rotate(-45deg);
+}
+
+.arrow_back::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 0.75rem;
+	background-color: var(--cl3);
+	right: 0;
+	/*transform: translateX(-50%);
+	left: 50%;*/
+}
