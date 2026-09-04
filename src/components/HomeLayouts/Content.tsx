@@ -3,6 +3,7 @@ import Contact from "./Contact";
 import Expert from "./Expert";
 import Projects from "./Projects";
 import Sidebar from "./Sidebar";
+import Certificates from "./certificates";
 import s from "./content.module.css";
 
 export default function Content() {
@@ -15,6 +16,7 @@ export default function Content() {
                 <About />
                 <Expert />
                 <Projects />
+                <Certificates />
                 <Contact />
             </div>
         </section>
