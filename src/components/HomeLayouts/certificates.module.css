@@ -1,20 +1,19 @@
-.certificates{
+.certificates {
 	display: flex;
 	flex-direction: column;
 	gap: 1px;
-	
 }
 
 .con_ttl {
-    display: block;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding);
-    background-color: var(--cl-prim);
-    padding-block: 4rem;
-    margin-top: 1px;
-    position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: var(--padding);
+	background-color: var(--cl-prim);
+	padding-block: 4rem;
+	margin-top: 1px;
+	position: relative;
 }
 
 .con_items {
@@ -39,7 +38,7 @@
 }
 
 .item h3 {
-	 font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .item a {
@@ -49,4 +48,13 @@
 	padding-block: 1rem;
 	align-self: flex-end;
 	font-weight: bold;
+}
+
+@media (max-width: 747px) {
+	.con_items {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 16px;
+		gap: 1px;
+	}
 }
