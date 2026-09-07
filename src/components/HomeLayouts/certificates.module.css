@@ -46,7 +46,7 @@
 	width: fit-content;
 	padding-inline: 1.5rem;
 	padding-block: 1rem;
-	align-self: flex-end;
+	align-self: flex-start;
 	font-weight: bold;
 }
 
