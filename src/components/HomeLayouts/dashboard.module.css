@@ -11,6 +11,15 @@
 	}
 }
 
+.floating_dots {
+	position: absolute;
+	top: var(--padding);
+	right: 0;
+	font-size: 1.5rem;
+	rotate: 180deg;
+	font-weight: bold;
+}
+
 .hero::before {
 	content: "";
 	width: var(--padding);
@@ -107,6 +116,10 @@
 	font-family: var(--f1);
 	word-spacing: 0rem;
 	align-self: flex-end;
+}
+
+.btm h1 span {
+	color: var(--cl2);
 }
 
 .btm button {

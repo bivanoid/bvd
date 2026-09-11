@@ -21,14 +21,15 @@ export default function Dashboard() {
 	}
 	return (
 		<section className={s.hero}>
+			<p className={s.floating_dots}>: .</p>
 			<div className={s.con_content}>
 				<div className={s.con_logo}>
 					<Logo />
 				</div>
 				<div className={s.btm}>
-					<p>Hii Visitors,</p>
+					{/*<p>Hii Visitors,</p>*/}
 					<h1>
-						Welcome to <br />
+						<span>Welcome to </span><br />
 						My Portfolio
 					</h1>
 					<div className={s.con_link}>

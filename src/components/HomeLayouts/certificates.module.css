@@ -28,7 +28,6 @@
 	flex-direction: column;
 	background-color: var(--cl-prim);
 	padding: var(--padding);
-	gap: 1rem;
 }
 
 .item .img_items {
@@ -39,15 +38,25 @@
 
 .item h3 {
 	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+
+.item p {
+	font-weight: bold;
+	color: var(--t2);
+	margin-top: 0.5rem;
 }
 
 .item a {
 	background-color: var(--cl1);
+	color: var(--cl2);
+	text-decoration: none;
 	width: fit-content;
 	padding-inline: 1.5rem;
 	padding-block: 1rem;
 	align-self: flex-start;
 	font-weight: bold;
+	margin-top: 1.5rem;
 }
 
 @media (max-width: 747px) {

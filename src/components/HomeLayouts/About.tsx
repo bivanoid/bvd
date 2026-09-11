@@ -10,7 +10,7 @@ export default function About() {
 			</h2>
 			<ul>
 				<li>
-					<span className="red">[</span>University
+					<span className="red">[</span>Current Study at
 					<span className="red">]</span>
 				</li>
 				<li>Pignateli Triputra University [IDN]</li>

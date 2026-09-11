@@ -55,17 +55,17 @@
 .projects .con_items .item .con_name {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     
 }
 .projects .con_items .item .con_name h3 {
     font-size: 1.5rem;
 }
 .projects .con_items .item .con_name p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 0;
     color: var(--t2);
     font-weight: 600;
+    margin-top: 0.5rem;
 }
 
 .projects .con_items .item .con_name .con_lang{
@@ -74,11 +74,11 @@
 }
 
 .projects .con_items .item .con_name .con_lang p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 0;
     color: var(--t1);
     font-weight: 800;
-    margin-top: 0.75rem;
+    margin-top: 1.5rem;
 }
 /* 
 .projects .con_items .item:hover {

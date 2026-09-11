@@ -68,7 +68,7 @@
           "name": "DoIt!",
           "link": "https://doit-xi-mocha.vercel.app/",
           "header_desc": "Web (PWA) to do list",
-          "type": "PWA",
+          "type": "Web",
           "language": [
               { "language_name": "Typescript" }
           ],
