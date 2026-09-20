@@ -10,16 +10,6 @@
     position: relative;
 }
 
-.about::after {
-    content: ": .";
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    rotate: 180deg;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
 .about h2 {
     font-size: 1.5rem;
     max-width: 50%;

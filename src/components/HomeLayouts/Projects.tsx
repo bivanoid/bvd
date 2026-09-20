@@ -1,6 +1,7 @@
 import s from "./projects.module.css";
 import { Link } from "react-router-dom";
 import DataProjects from "../../data/project_data.json";
+import FloatingIcon from "../CommontLayouts/FloatingIcon";
 
 export default function Projects() {
 	const projects = DataProjects.projects;
@@ -8,9 +9,9 @@ export default function Projects() {
 	return (
 		<section id="project" className={s.projects}>
 			<div className={s.con_ttl}>
+				<FloatingIcon positionAbsolute={true} positionLeft={true} valueInline="var(--padding)" rotateIcon="0deg"/>
 				<h2>
-					Here are some selected projects I’ve worked on{" "}
-					<span className="red">★</span>, both individually and in groups
+					Here are some selected projects I’ve worked on, both individually and in groups
 				</h2>
 			</div>
 			<div className={s.con_items}>

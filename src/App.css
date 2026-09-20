@@ -21,7 +21,7 @@
 
 	--outer-padding: 2em;
 	--inner-padding: 2em;
-/*
+	/*
 	@media (max-width:747px) {
 		--padding: 2rem;
 	}*/
@@ -97,7 +97,45 @@ main {
 	animation: dot 1s linear infinite;
 }
 
+.floating_dots {
+	position: absolute;
+	top: var(--padding);
+	width: fit-content;
+	right: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 5px;
+}
 
+.floating_dots span {
+	width: 5px;
+	aspect-ratio: 1/1;
+	background-color: var(--t1);
+}
+
+.floating_dots span:nth-child(1) {
+	animation: kedip 2s linear infinite;
+	background-color: var(--cl2);
+}
+
+@keyframes kedip {
+	0% {
+		opacity: 100%;
+	}
+	25% {
+		opacity: 100%;
+	}
+	50% {
+		opacity: 0%;
+	}
+	75% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
 
 @keyframes dot {
 	0% {

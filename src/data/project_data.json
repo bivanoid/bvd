@@ -4,13 +4,13 @@
           "id": "loomnyarn",
           "name": "Loom & Yarn",
           "link": "https://github.com/bivanoid/Loom-Yarn",
-          "header_desc": "Website UMKM Boneka Rajut",
+          "header_desc": "Knitted Doll UMKM Website",
           "type": "Web",
           "language": [
               { "language_name": "PHP" },
               { "language_name": "MYSQL" }
           ],
-          "short_desc": "Sebuah website umkm penjualan boneka hasil rajutan, menampilkan katalog beberapa barang yang dijual dengan fitur simpan ke keranjang sebelum dibeli. metode pembelian menggunakan chat whatsapp yang dimana nama barang, jumlah, subtotal dan total harga akan dikirimkan dengan teks ke nomor whatsapp penjual",
+          "short_desc": "An UMKM website for selling hand-knitted dolls, displaying a catalog of several items for sale with a shopping cart feature before purchase. The purchase method uses WhatsApp chat where the product name, quantity, subtotal and total price will be sent via text to the seller's WhatsApp number",
           "detail": [
               { "technology":
                 [
@@ -32,13 +32,13 @@
           "id": "bicture",
           "name": "Bicture App",
           "link": "https://github.com/bivanoid/bicture-app",
-          "header_desc": "Aplikasi sosial media",
+          "header_desc": "Social media application",
           "type": "App",
           "language": [
               { "language_name": "JAVA" },
               { "language_name": "XML" }
           ],
-          "short_desc": "Aplikasi sosial media bersekala kecil yang berintregrasi dengan firebase database",
+          "short_desc": "A small-scale social media application integrated with Firebase database",
           "detail": [
               { "technology":
                 [
@@ -65,14 +65,14 @@
         },
         {
           "id": "doit",
-          "name": "DoIt!",
-          "link": "https://doit-xi-mocha.vercel.app/",
+          "name": "Doit!",
+          "link": "https://github.com/bivanoid/DoIt",
           "header_desc": "Web (PWA) to do list",
           "type": "Web",
           "language": [
               { "language_name": "Typescript" }
           ],
-          "short_desc": "Website yang digunakan untuk mencatat hal-hal yang akan dilakukan agar semua berjalan sesuai dengan rencana",
+          "short_desc": "A website used to record tasks that need to be completed so everything runs according to plan",
           "detail": [
               { "technology":
                 [
@@ -98,12 +98,12 @@
           "id": "bynnashop",
           "name": "Bynnashop",
           "link": "https://github.com/bivanoid/bynnashop",
-          "header_desc": "Web untuk menjual hasil masakan",
+          "header_desc": "Web for selling home-cooked meals",
           "type": "Web",
           "language": [
               { "language_name": "Typescript" }
           ],
-          "short_desc": "Web UMKM pada umumnya yang digunakan untuk menjual hasil masakan, memiliki fitur keranjang juga didalamnya",
+          "short_desc": "A typical UMKM website used for selling home-cooked meals, it also has a shopping cart feature",
           "detail": [
               { "technology":
                 [

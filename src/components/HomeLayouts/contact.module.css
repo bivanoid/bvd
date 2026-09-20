@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 1px;
+    position: relative;
 }
 
 .contact .con_ttl {
@@ -15,17 +16,6 @@
     margin-top: 1px;
     position: relative;
 }
-
-.contact .con_ttl::after {
-    content: ": .";
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    rotate: 180deg;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
 
 .contact .con_ttl h2 {
     font-size: 1.5rem;

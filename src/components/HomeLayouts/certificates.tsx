@@ -55,7 +55,7 @@ export default function Certificates() {
 		<section className={s.certificates}>
 			<div className={s.con_ttl}>
 				<h2>
-					My Certificates <span className="red">★</span>.
+					My Certificates.
 				</h2>
 			</div>
 

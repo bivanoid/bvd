@@ -1,6 +1,7 @@
 import s from "./dashboard.module.css";
 import Logo from "../../assets/icon.svg?react";
 import { useLenis } from "lenis/react";
+import FloatingIcon from "../CommontLayouts/FloatingIcon";
 export default function Dashboard() {
 	const lenis = useLenis();
 	const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
@@ -21,7 +22,7 @@ export default function Dashboard() {
 	}
 	return (
 		<section className={s.hero}>
-			<p className={s.floating_dots}>: .</p>
+			<FloatingIcon positionAbsolute={true} rotateIcon="90deg"/>
 			<div className={s.con_content}>
 				<div className={s.con_logo}>
 					<Logo />

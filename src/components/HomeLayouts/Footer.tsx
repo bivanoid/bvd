@@ -1,5 +1,6 @@
 import s from "./footer.module.css"
 import Logo from "../../assets/icon.svg?react"
+import FloatingIcon from "../CommontLayouts/FloatingIcon"
 
 export default function Footer() {
     return(
@@ -16,8 +17,8 @@ export default function Footer() {
                 </p>
             </div>
             <div className={s.bottom}>
-                <p>: .</p>
-                <p>. :</p>
+             	<FloatingIcon positionAbsolute={false} rotateIcon="270deg" positionLeft={true} valueInline="0px"/>
+             	<FloatingIcon positionAbsolute={false} rotateIcon="180deg" positionLeft={false} valueInline="0px"/>
             </div>
         </footer>
     )

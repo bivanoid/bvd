@@ -11,14 +11,7 @@
 	}
 }
 
-.floating_dots {
-	position: absolute;
-	top: var(--padding);
-	right: 0;
-	font-size: 1.5rem;
-	rotate: 180deg;
-	font-weight: bold;
-}
+
 
 .hero::before {
 	content: "";
@@ -57,12 +50,14 @@
 	width: fit-content;
 	height: fit-content;
 	border: 1px solid var(--cl-border);
-	padding: 1rem;
+	background-color: var(--cl1);
+	padding: 0.75rem;
+	
 }
 
 .hero svg {
-	width: 3rem;
-	height:  3rem;
+	width: 2rem;
+	height:  2rem;
 }
 .hero svg path {
 	fill: var(--cl3);
@@ -109,7 +104,7 @@
 }
 
 .btm h1 {
-	font-size: clamp(2rem, 10vw, 4.5rem);
+	font-size: clamp(2rem, 10vw, 2.25rem);
 	text-transform: capitalize;
 	color: var(--t1);
 	font-weight: 800;
