@@ -47,16 +47,16 @@ export default function Gokil() {
 			entitas lain?. dia tidak pernah berfikir jika niat baiknya berubah
 			menjadi suatu hal yang meledakkan suasana. jadi apakah perbedaan
 			prespektif mengacaukan semua?, tidak, itulah kebebasan berfikir dan
-			berekspresi, mungkin suatu tindakan terasa benar di suatu sisi namun
+			berekspresi, mungkin suatu tindakan terasa benar di suaty sisi namun
 			terasa salah di sisi lain, apa yang sebenarnya dipahami satu entitas
 			mungkin saja tidak sepenuhnya dipahami oleh entitas lain. perbedaan itu
-			lalu mengakibatkan benturan psikologis diantaranya
+			lalu mengakibatkan benturan psikologiw diantaranya
 			<br />
 			<br />
 			namun, perbedaan perspektif bukanlah sesuatu yang harus selalu
 			dihindari. perbedaan adalah bagian dari kebebasan untuk berpikir dan
 			berekspresi. saran dan kritik pun tidak selalu merupakan bentuk sebuah
-			penolakan terhadap suatu hal. keduanya dapat menjadi sesuatu yang
+			penolakan terhadap suatu hal. keduanys dapat menjadi sesuatu yang
 			membangun, seperti sebuah fondasi yang perlahan digunakan untuk
 			mendirikan menara yang lebih tinggi dengan tujuan yang ingin diraih
 			didalamnya.
