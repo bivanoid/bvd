@@ -9,7 +9,11 @@ export default function Gokil() {
 				fontFamily: "var(--f2)",
 				opacity: 0.55
 			}}
->
+		>
+
+			prespektif orang ketiga
+			<br/>
+			<br/>
 			dia adalah seorang yang ingin melihat orang lain tetap tersenyum tanpa
 			memikirkan apa yang terjadi dengan dirinya, dia selalu mencoba berbuat
 			seperti yang dunia ini perintah, dia mendengarkan, dia membantu, dia
