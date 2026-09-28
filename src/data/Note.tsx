@@ -1,13 +1,14 @@
 export default function Gokil() {
 	return (
-		<p style={{
-			padding: "3rem",
-			fontSize: "1.5rem",
-			fontWeight: "bold",
-			lineHeight: 1.5,
-			opacity: "0.55"
-			
-		}}>
+		<p
+			style={{
+				padding: "clamp(1.2rem, 5vw, 3rem)",
+				fontSize: "clamp(1rem, 2.5vw, 1.5rem)",
+				fontWeight: "bold",
+				lineHeight: 1.5,
+				opacity: 0.55
+			}}
+>
 			dia adalah seorang yang ingin melihat orang lain tetap tersenyum tanpa
 			memikirkan apa yang terjadi dengan dirinya, dia selalu mencoba berbuat
 			seperti yang dunia ini perintah, dia mendengarkan, dia membantu, dia
