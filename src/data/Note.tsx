@@ -4,8 +4,9 @@ export default function Gokil() {
 			style={{
 				padding: "clamp(1.2rem, 5vw, 3rem)",
 				fontSize: "clamp(1rem, 2.5vw, 1.5rem)",
-				fontWeight: "bold",
+				fontWeight: "normal",
 				lineHeight: 1.5,
+				fontFamily: "var(--f2)",
 				opacity: 0.55
 			}}
 >
