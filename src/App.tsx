@@ -7,6 +7,7 @@ import { useScrollToTop } from './hooks/useScrollToTop';
 
 const Home = lazy(() => import("./pages/Home"));
 const DetailedProject = lazy(() => import("./components/ProjectsLayouts/DetailedProject"));
+const Gokil = lazy(() => import("./data/Note"));
 
 function Loading() {
   return (
@@ -23,6 +24,7 @@ function AppRoutes() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path="/projects/:id" element={<DetailedProject />} />
+      <Route path="/perspektiforang" element={<Gokil/>} />
     </Routes>
   )
 }
