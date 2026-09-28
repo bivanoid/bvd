@@ -24,7 +24,7 @@ function AppRoutes() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path="/projects/:id" element={<DetailedProject />} />
-      <Route path="/perspektiforang" element={<Gokil/>} />
+      <Route path="/note" element={<Gokil/>} />
     </Routes>
   )
 }
