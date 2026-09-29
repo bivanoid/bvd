@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 
 @font-face {
 	font-family: "sg";
@@ -11,7 +11,6 @@
 
 :root {
 	--f1: "sg";
-	--f1: "Playfair", serif;
 	/* --cl-prim: #121420; */
 	--cl-prim: #04050d;
 	/* --cl-prim: #0A0A0A; */
