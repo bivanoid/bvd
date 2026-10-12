@@ -6,7 +6,7 @@ export default function About() {
 		<section className={s.about}>
 			<FloatingIcon positionAbsolute={true} positionLeft={false} valueInline="var(--padding)" rotateIcon="90deg" />
 			<h2>
-				Hello! My name is Firdhan Abivandya.
+				Hello! My name is <span>Firdhan Abivandya</span>.
 				I am from Surakarta, Central Java Province, Indonesia.
 				<br />I like to pour my imagination into code and implement it.
 			</h2>

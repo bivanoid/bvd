@@ -59,7 +59,7 @@ body {
 
 main {
 	background-color: var(--cl-border);
-	margin-inline: var(--padding);
+	margin-inline: calc(var(--padding) / 2);
 	display: flex;
 	flex-direction: column;
 	gap: 1px;
@@ -157,7 +157,7 @@ main {
 
 @media (max-width: 747px) {
 	main {
-		margin-inline: 1rem;
+		margin-inline: calc(var(--padding) / 2);
 	}
 
 	.con_alert {

@@ -13,6 +13,8 @@
 	font-size: clamp(2rem, 10vw, 2.25rem);
 	padding-top: calc(var(--padding) * 2);
 	margin-inline: var(--margin);
+	height: 40vh;
+	display: none;
 }
 .sidebar h3 {
 	color: var(--t1);
@@ -80,5 +82,7 @@
 
 	.sidebar h2 {
 		padding-top: calc(var(--padding) * 2);
+		height: fit-content;
+		display: none;
 	}
 }

@@ -1,7 +1,7 @@
 .hero {
 	padding-bottom: var(--padding);
 	padding-top: var(--padding);
-	height: calc(100svh - 42px);
+	height: 65vh;
 	display: flex;
 	background-color: var(--cl-prim);
 	position: relative;
@@ -52,14 +52,15 @@
 	border: 1px solid var(--cl-border);
 	background-color: var(--cl1);
 	padding: 0.75rem;
+	align-self: center;
 	
 }
 
-.hero svg {
+.hero .con_logo svg {
 	width: 2rem;
 	height:  2rem;
 }
-.hero svg path {
+.hero .con_logosvg path {
 	fill: var(--cl3);
 }
 
@@ -103,19 +104,30 @@
 	position: absolute;
 }
 
-.btm h1 {
-	font-size: clamp(2rem, 10vw, 2.25rem);
+.btm .text_header {
+	
 	text-transform: capitalize;
 	color: var(--t1);
+	width: 100%;
 	font-weight: 800;
 	font-family: var(--f1);
+	text-transform: uppercase;
 	word-spacing: 0rem;
 	align-self: flex-end;
+	display: flex;
+	gap: 0;
+	flex-direction: column;
 }
 
-.btm h1 span {
-	color: var(--cl2);
+.btm .text_header svg {
+	width: 100%;
+	height: fit-content;
 }
+
+.btm .text_header svg {
+	fill:  var(--white2);
+}
+
 
 .btm button {
 	width: 7rem;
@@ -124,4 +136,18 @@
 	border: 1px solid var(--cl-border);
 	border-radius: 50%;
 	margin-right: var(--padding);
+}
+
+@media (max-width:747px) {
+	.btm .text_header h1 {
+		font-size: clamp(3rem, 10vw, 9rem);
+	}
+
+	.hero {
+		height: fit-content;
+	}
+
+	.btm .text_header {
+		margin-top: 3rem;
+	}
 }

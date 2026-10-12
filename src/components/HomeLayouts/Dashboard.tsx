@@ -1,5 +1,6 @@
 import s from "./dashboard.module.css";
 import Logo from "../../assets/icon.svg?react";
+import Portfolio from "../../assets/PORTFOLIO.svg?react";
 import { useLenis } from "lenis/react";
 import FloatingIcon from "../CommontLayouts/FloatingIcon";
 export default function Dashboard() {
@@ -29,10 +30,9 @@ export default function Dashboard() {
 				</div>
 				<div className={s.btm}>
 					{/*<p>Hii Visitors,</p>*/}
-					<h1>
-						<span>Welcome to </span><br />
-						My Portfolio
-					</h1>
+					<div className={s.text_header}>
+						<Portfolio />
+					</div>
 					<div className={s.con_link}>
 						<p onClick={toAbout}>
 							<span className="red">[</span>Scroll
