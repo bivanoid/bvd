@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "sg";
-	src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2) format(woff2);
+	src: url(./assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.woff2) format(woff2);
 }
 /*@font-face {
 	font-family: "pf";
@@ -11,9 +11,7 @@
 
 :root {
 	--f1: "sg";
-	/* --cl-prim: #121420; */
-	--cl-prim: #04050d;
-	/* --cl-prim: #0A0A0A; */
+	--cl-prim: #060606;
 	--cl-sec: #f7f7f7;
 	--cl-border: #262626;
 
@@ -26,11 +24,10 @@
 	--margin: 2rem;
 
 	--outer-padding: 2em;
-	--inner-padding: 2em;
-	/*
+	--inner-padding: 6rem;
 	@media (max-width:747px) {
-		--padding: 2rem;
-	}*/
+		--inner-padding: 2rem;
+	}
 
 	--cl2: #73bcec;
 	--cl3: #f77171;
@@ -41,7 +38,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	line-height: 0.85;
+	/*line-height: 0.85;*/
 	outline: none;
 	user-select: none;
 	-webkit-tap-highlight-color: transparent;
@@ -59,7 +56,6 @@ body {
 
 main {
 	background-color: var(--cl-border);
-	margin-inline: calc(var(--padding) / 2);
 	display: flex;
 	flex-direction: column;
 	gap: 1px;
@@ -157,7 +153,7 @@ main {
 
 @media (max-width: 747px) {
 	main {
-		margin-inline: calc(var(--padding) / 2);
+		margin-inline: 0
 	}
 
 	.con_alert {

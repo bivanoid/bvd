@@ -41,7 +41,7 @@ export default function Certificates() {
 			title: "AI Learning",
 			from: "AI Class ASEAN",
 			link: "https://drive.google.com/file/d/1s2tM8Z49HHpEAPhX3oBcYmxVrvOUNjXp/view?usp=drive_link",
-		}
+		},
 		// {
 		// 	id: 5,
 		// 	img: freeCodeCamp,
@@ -54,14 +54,13 @@ export default function Certificates() {
 	return (
 		<section className={s.certificates}>
 			<div className={s.con_ttl}>
-				<h2>
-					My Certificates.
-				</h2>
+				<h2>A Half of My Certificates.</h2>
 			</div>
 
 			<div className={s.con_items}>
 				{certificatesItem.map((certificate) => (
 					<div className={s.item} key={certificate.id}>
+						<h2>0{certificate.id}</h2>
 						<img
 							className={s.img_items}
 							src={certificate.img}
@@ -69,7 +68,13 @@ export default function Certificates() {
 						/>
 						<h3>{certificate.title}</h3>
 						<p>{certificate.from}</p>
-						{certificate.link ? <a href={certificate.link}>Verificate</a> : ""}
+						{certificate.link ? (
+							<a href={certificate.link}>
+								certificates<span>Verificate</span>
+							</a>
+						) : (
+							""
+						)}
 					</div>
 				))}
 			</div>

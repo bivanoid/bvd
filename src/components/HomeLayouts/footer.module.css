@@ -1,6 +1,7 @@
 .footer {
 	width: 100%;
-	padding: var(--padding);
+	padding-inline: var(--inner-padding);
+	padding-top: calc(var(--inner-padding) / 2);
 	padding-bottom: calc(42px + 2rem);
 	display: flex;
 	flex-direction: column;
@@ -33,7 +34,7 @@
 }
 
 .con_footer p:nth-child(1) {
-	font-weight: 600;
+	font-weight: bold;
 	font-size: 1rem;
 	height: fit-content;
 }
@@ -58,7 +59,7 @@
 }
 
 .con_footer p:nth-child(3) {
-	font-weight: 600;
+	font-weight: bold;
 	color: var(--t2);
 	text-align: center;
 	font-size: 1rem;
@@ -74,6 +75,9 @@
 }
 
 @media (max-width: 747px) {
+	.footer {
+		padding-block: calc(var(--padding) * 2);
+	}
 	.footer svg {
 		align-self: center;
 		width: 25px;

@@ -2,7 +2,7 @@
     flex: 1;
     background-color: var(--cl-prim);
     height: fit-content;
-    padding: var(--padding);
+    padding-inline: var(--inner-padding);
     padding-block: calc(var(--padding) * 2);
     display: flex;
     justify-content: space-between;
@@ -11,8 +11,8 @@
 }
 
 .about h2 {
-    font-size: 1.5rem;
-    max-width: 50%;
+    font-size: 2rem;
+    max-width: 40%;
     font-weight: bold;
 }
 

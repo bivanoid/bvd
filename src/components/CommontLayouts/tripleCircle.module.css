@@ -1,0 +1,19 @@
+.con_circle {
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	position: relative;
+}
+
+.circle {
+	aspect-ratio: 1/1;
+	border: 2px solid var(--cl-border);
+	background-color: var(--cl-prim);
+	background-color: transparent;
+	border-radius: 50%;
+	position: relative;
+}
+
+.circle:nth-child(2) {
+	border-style: dashed;
+}

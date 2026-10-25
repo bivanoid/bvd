@@ -1,6 +1,6 @@
 .content {
     height: fit-content;
-    margin-inline: 1px;
+
     display: flex;
     justify-content: space-between;
     gap: 1px;

@@ -13,13 +13,6 @@
     border-block: 1px solid var(--cl-border);
     font-weight: 800;
 }
-
-@media (max-width:747px) {
-	.nav {
-		padding-inline: 1rem;
-	}
-}
-
 .nav::before {
 	content: "";
 	width: 1px;

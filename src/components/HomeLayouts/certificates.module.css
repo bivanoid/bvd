@@ -9,11 +9,15 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: var(--padding);
+	padding-inline: var(--inner-padding);
 	background-color: var(--cl-prim);
 	padding-block: 4rem;
 	margin-top: 1px;
 	position: relative;
+}
+
+.con_ttl h2 {
+	font-size: 2rem;
 }
 
 .con_items {
@@ -28,12 +32,23 @@
 	flex-direction: column;
 	background-color: var(--cl-prim);
 	padding: var(--padding);
+	position: relative;
+	padding-inline: var(--inner-padding);
 }
 
 .item .img_items {
 	background-color: red;
 	width: 50px;
 	height: 50px;
+}
+
+.item h2 {
+	position: absolute;
+	right: calc(var(--inner-padding) / 2);
+	opacity: 0.05;
+	font-size: clamp(4rem, 10vw, 8rem);
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .item h3 {
@@ -48,15 +63,30 @@
 }
 
 .item a {
-	background-color: var(--cl1);
-	color: var(--cl2);
+	background-color: transparent;
+	color: var(--t1);
 	text-decoration: none;
 	width: fit-content;
-	padding-inline: 1.5rem;
-	padding-block: 1rem;
-	align-self: flex-start;
+	padding-left: 1.5rem;
 	font-weight: bold;
+	height: 50px;
+	align-self: flex-start;
 	margin-top: 1.5rem;
+	border: 1px solid var(--cl-border);
+	align-items: center;
+	gap: 1rem;
+	display: flex;
+}
+
+.item a span {
+	display: block;
+	background-color: var(--cl2);
+	color: var(--cl-prim);
+	height: 100%;
+	width: fit-content;
+	padding-inline: 1.5rem;
+	display: grid;
+	place-items: center;
 }
 
 @media (max-width: 747px) {

@@ -1,76 +1,200 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	margin-top: 1px;
+	height: fit-content;
 }
 
 .projects .con_ttl {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: block;
-    background-color: var(--cl-prim);
-    padding: 2rem;
-    padding-left: auto;
-    text-align: left;
-    padding-block: 4rem;
-    position: relative;
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: block;
+	background-color: var(--cl-prim);
+	text-align: left;
+	padding-block: 4rem;
+	padding-left: var(--inner-padding);
+	position: relative;
 }
 
 .projects .con_ttl h2 {
-    font-size: 1.5rem;
-    margin-left: 50%;
+	font-size: 2rem;
+	width: 40%;
+}
+
+.con_items_github {
+	display: flex;
+	gap: 1px;
+	position: relative;
 }
 
 .projects .con_items {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
 }
 
-
 .projects .con_items .item {
-    width: 100%;
-    background-color: var(--cl-prim);
-    padding: var(--padding);
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
+	width: 100%;
+	height: auto;
+	background-color: var(--cl-prim);
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	gap: 3rem;
+	text-decoration: none;
+	padding: var(--padding);
+	padding-left: var(--inner-padding);
 }
 
 .projects .con_items .item:hover {
 	background-color: var(--cl1);
 }
 
-.projects .con_items .item .con_name {
-    display: flex;
-    flex-direction: column;
-    
-}
-.projects .con_items .item .con_name h3 {
-    font-size: 1.5rem;
-}
-.projects .con_items .item .con_name p {
-    font-size: 1rem;
-    padding: 0;
-    color: var(--t2);
-    font-weight: 600;
-    margin-top: 0.5rem;
+.projects .con_items .item .con_img {
+	height: 100%;
+	background-color: var(--cl-border);
+	aspect-ratio: 1/1;
+	position: relative;
 }
 
-.projects .con_items .item .con_name .con_lang{
-    display: flex;
-    gap: 0.25rem;
+.projects .con_items .item .con_img img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+.projects .con_items .item .con_name {
+	display: flex;
+	flex-direction: column;
+}
+.projects .con_items .item .con_name h3 {
+	font-size: 1.5rem;
+}
+.projects .con_items .item .con_name p {
+	font-size: 1rem;
+	padding: 0;
+	color: var(--t2);
+	font-weight: 600;
+	margin-top: 0.5rem;
+}
+
+.projects .con_items .item .con_name .con_lang {
+	display: flex;
+	gap: 0.25rem;
 }
 
 .projects .con_items .item .con_name .con_lang p {
-    font-size: 1rem;
-    padding: 0;
-    color: var(--t1);
-    font-weight: 800;
-    margin-top: 1.5rem;
+	font-size: 1rem;
+	padding: 0;
+	color: var(--t1);
+	font-weight: 800;
+	margin-top: 1.5rem;
 }
-/* 
+
+.con_github {
+	height: auto;
+	background-color: var(--cl-prim);
+	position: relative;
+}
+
+.github {
+	background-color: var(--cl-prim);
+	width: 100%;
+	padding-inline: var(--inner-padding);
+	padding-block: calc(var(--inner-padding) / 2);
+	position: sticky;
+	height: calc(100vh - (var(--inner-padding) / 2));
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.github h2 {
+	font-size: 4rem;
+}
+
+.con_circle {
+	margin-block: auto;
+}
+
+.github a {
+	height: 50px;
+	display: block;
+	padding: var(--padding);
+	border: 1px solid var(--cl-border);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.github a span {
+	height: 100%;
+	width: fit-content;
+	background-color: var(--cl2);
+	display: block;
+	display: flex;
+	align-items: center;
+	color: var(--cl-prim);
+	padding-inline: 1rem;
+}
+
+.github ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	background-color: var(--cl-border);
+	padding: 1px;
+	gap: 1px;
+	margin-top: 1rem;
+}
+
+.github ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	background-color: var(--cl-prim);
+	padding: var(--padding);
+}
+
+.github ul li p {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: var(--cl2);
+}
+
+.github .profile {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: auto;
+}
+
+.github .profile img {
+	width: 100%;
+	max-width: 48px;
+	/*border: 1px solid var(--cl-border);*/
+	border-radius: 50%;
+}
+
+.github .profile .profile_usr p {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.github .profile .profile_usr p:nth-child(2) {
+	opacity: 0.5;
+	font-size: 1rem;
+}
+
+/*
 .projects .con_items .item:hover {
     background-color: var(--cl3);
 }
@@ -88,14 +212,77 @@
 } */
 
 .type {
-    font-size: 1rem;
-    color: var(--cl2);
+	font-size: 1rem;
+	color: var(--cl2);
+}
+
+.error {
+	padding-inline: var(--inner-padding);
+	padding-block: calc(var(--inner-padding) / 2);
+	margin-top: 1px;
+	background-color: var(--cl-prim);
+	font-weight: bold;
+	color: var(--cl3);
+	font-size: 1.5rem;
 }
 
 
-@media (max-width:747px) {
-    .projects .con_ttl h2 {
-    font-size: 1.5rem;
-    margin-left: 25%;
-}
+@media (max-width: 747px) {
+	.projects .con_ttl {
+		padding-inline: var(--inner-padding);
+	}
+
+	.projects .con_ttl h2 {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	.projects .con_items .item {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	.projects .con_items .item .con_img {
+		width: 20%;
+	}
+
+	.con_items_github {
+		flex-direction: column;
+	}
+
+	.github {
+		height: fit-content;
+		gap: 1rem;
+		padding-block: calc(var(--padding) * 2);
+	}
+
+	.github a {
+		font-size: 0.75rem;
+	}
+
+	.con_circle {
+		margin-block: 1rem;
+	}
+
+	.github h2 {
+		font-size: 2rem;
+	}
+
+	.github ul {
+		margin-top: 0;
+	}
+
+	.github ul li h4 {
+		font-size: 0.75rem;
+	}
+
+	.github ul li {
+		padding: 1rem;
+		padding-inline: 0.5rem;
+	}
+
+	.github ul li p {
+		font-size: 2rem;
+	}
 }

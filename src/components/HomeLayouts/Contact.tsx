@@ -1,5 +1,4 @@
 import Alert from "../CommontLayouts/Alert";
-import FloatingIcon from "../CommontLayouts/FloatingIcon";
 import s from "./contact.module.css";
 import { useEffect, useState } from "react";
 export default function Contact() {
@@ -50,48 +49,50 @@ export default function Contact() {
 			return () => clearInterval(interval);
 		}
 	}, [useValidation]);
+
 	return (
 		<section className={s.contact}>
-			<div
-				style={{
-					bottom: useValidation ? "0" : "-100%",
-					scale: useValidation ? "1" : "1",
-					opacity: useValidation ? "1" : "0",
-				}}
-				onClick={() => setValidation(false)}
-				className="con_alert"
-			>
-				<Alert
-					typeStatus={1}
-					textAlert="Don't leave this form empty"
-					count={useCount}
-				/>
-			</div>
-			<div className={s.con_ttl}>
-				<FloatingIcon
-					positionAbsolute={true}
-					positionLeft={false}
-					valueInline="var(--padding)"
-					rotateIcon="90deg"
-				/>
-				<h2>
-					Have an idea, project, or opportunity in mind? Let's connect and
-					discuss how we can make it happen.
-				</h2>
-			</div>
-			<input
-				type="text"
-				placeholder="Type your Name"
-				value={useName}
-				onChange={(e) => setUseName(e.target.value)}
-			/>
-			<div className={s.con_inp_submit}>
-				<textarea
-					placeholder="Type out Something"
-					value={useDesc}
-					onChange={(e) => setUseDesc(e.target.value)}
-				/>
-				<button onClick={Send}>Submit</button>
+			<h2>Contact Me</h2>
+			<div className={s.con_ttl_inp}>
+				<div
+					style={{
+						bottom: useValidation ? "0" : "-100%",
+						scale: useValidation ? "1" : "1",
+						opacity: useValidation ? "1" : "0",
+					}}
+					onClick={() => setValidation(false)}
+					className="con_alert"
+				>
+					<Alert
+						typeStatus={1}
+						textAlert="Don't leave this form empty"
+						count={useCount}
+					/>
+				</div>
+				<div className={s.con_ttl}>
+					<h2>
+						Have an idea, project, or opportunity in mind? Let's connect and
+						discuss how we can make it happen.
+					</h2>
+				</div>
+				<div className={s.con_input}>
+					<input
+						type="text"
+						placeholder="Type your Name"
+						value={useName}
+						onChange={(e) => setUseName(e.target.value)}
+					/>
+					<div className={s.con_inp_submit}>
+						<textarea
+							placeholder="Type out Something"
+							value={useDesc}
+							onChange={(e) => setUseDesc(e.target.value)}
+						/>
+						<div className={s.con_button}>
+							<button onClick={Send}>Submit Messages<span>Via Whatsapp</span></button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

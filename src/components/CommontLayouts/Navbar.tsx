@@ -20,7 +20,8 @@ export default function Navbar({
 				{nav ? (
 					<div className={s.back}>
 						<span className={s.arrow_back}></span>
-						<span className="red">[</span>back
+						<span className="red">[</span>
+						{ttl}
 						<span className="red">]</span>
 					</div>
 				) : (

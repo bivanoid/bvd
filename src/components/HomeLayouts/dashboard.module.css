@@ -1,9 +1,10 @@
 .hero {
 	padding-bottom: var(--padding);
 	padding-top: var(--padding);
-	height: 65vh;
+	height: calc(100vh - var(--padding));
 	display: flex;
 	background-color: var(--cl-prim);
+	padding-inline: var(--inner-padding);
 	position: relative;
 	/*overflow: hidden;*/
 	@media (max-width:747px) {
@@ -12,31 +13,6 @@
 }
 
 
-
-.hero::before {
-	content: "";
-	width: var(--padding);
-	height: 1px;
-	background-color: var(--cl-border);
-	position: absolute;
-	bottom: -1px;
-	left: -2rem;
-	@media (max-width: 727px) {
-		left: -1rem;
-	}
-}
-.hero::after {
-	content: "";
-	width: var(--padding);
-	height: 1px;
-	background-color: var(--cl-border);
-	position: absolute;
-	bottom: -1px;
-	right: -2rem;
-	@media (max-width: 727px) {
-		right: -1rem;
-	}
-}
 
 .hero .con_content {
 	width: 100%;
@@ -48,12 +24,32 @@
 
 .con_logo {
 	width: fit-content;
-	height: fit-content;
-	border: 1px solid var(--cl-border);
-	background-color: var(--cl1);
-	padding: 0.75rem;
-	align-self: center;
+	height: 200px;
 	
+	background-color: var(--cl1);
+	align-self: flex-end;
+	position: relative;
+	z-index: 2;
+}
+
+.con_logo img {
+	width: 200px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border: 5px solid var(--cl-prim);
+	opacity: 1;
+}
+
+.con_logo::before {
+	content: '';
+	height: 200px;
+	translate: -10% 10%;
+	z-index: -1;
+	background: url("../../assets/images/gw.webp");
+	opacity: 0.25;
+	aspect-ratio: 1/1;
+	position: absolute;
+	border: 1px solid var(--cl-border);
 }
 
 .hero .con_logo svg {
@@ -119,6 +115,10 @@
 	flex-direction: column;
 }
 
+.text_header h1 {
+	font-size: 7rem;
+}
+
 .btm .text_header svg {
 	width: 100%;
 	height: fit-content;
@@ -139,12 +139,11 @@
 }
 
 @media (max-width:747px) {
+	.hero {
+		height: calc(100svh - 42px);
+	}
 	.btm .text_header h1 {
 		font-size: clamp(3rem, 10vw, 9rem);
-	}
-
-	.hero {
-		height: fit-content;
 	}
 
 	.btm .text_header {

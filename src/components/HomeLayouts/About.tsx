@@ -1,10 +1,8 @@
-import FloatingIcon from "../CommontLayouts/FloatingIcon";
 import s from "./about.module.css";
 
 export default function About() {
 	return (
-		<section className={s.about}>
-			<FloatingIcon positionAbsolute={true} positionLeft={false} valueInline="var(--padding)" rotateIcon="90deg" />
+		<section id="about" className={s.about}>
 			<h2>
 				Hello! My name is <span>Firdhan Abivandya</span>.
 				I am from Surakarta, Central Java Province, Indonesia.
