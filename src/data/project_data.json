@@ -124,6 +124,35 @@
           ],
           "textBtn": "see source code",
           "image": "/img/bynnashop.webp"
+        },
+        {
+          "id": "campusflow",
+          "name": "CampusFlow",
+          "link": "https://campus-flow-flax.vercel.app/",
+          "header_desc": "Campus web for task and schedule managing",
+          "type": "Web",
+          "language": [
+              { "language_name": "Typescript" }
+          ],
+          "short_desc": "A campus project: a task and schedule manager for students. All data is dummy.",
+          "detail": [
+              { "technology":
+                [
+                  { "technology_name" : "React.JS" },
+                  { "technology_name" : "Vercel" }
+                ]
+              },
+              { "library":
+                [
+                  { "library_detail": "react-day-picker 10.0.2"},
+                  { "library_detail": "swiper 14.3.0"},
+                  { "library_detail": "lucide-react 1.49.0"},
+                  { "library_detail": "react-router-dom 7.18.0"}
+                ]
+              }
+          ],
+          "textBtn": "see source code",
+          "image": "/img/campusflow.webp"
         }
     ]
 }
