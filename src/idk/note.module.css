@@ -1,0 +1,26 @@
+.con {
+	padding: var(--padding);
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	background-color: #0a0908;
+}
+
+.con p {
+	color: #cccccc;
+}
+
+.link {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	border: 1px solid var(--cl-border);
+	padding: 1rem;
+	background-color: var(--cl2);
+	color: var(--cl-prim);
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 0.75rem;
+}

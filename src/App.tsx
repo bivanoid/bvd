@@ -4,6 +4,7 @@ import { ReactLenis } from 'lenis/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from 'react';
 import { useScrollToTop } from './hooks/useScrollToTop';
+import Hi from './idk/note';
 
 const Home = lazy(() => import("./pages/Home"));
 const DetailedProject = lazy(() => import("./components/ProjectsLayouts/DetailedProject"));
@@ -23,7 +24,7 @@ function AppRoutes() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path="/projects/:id" element={<DetailedProject />} />
-      {/*<Route path="/note" element={<Gokil/>} />*/}
+      <Route path="/hi" element={<Hi/>} />
     </Routes>
   )
 }
