@@ -64,7 +64,7 @@ export default function Hi() {
 				lalu aku juga pengen usahain jadi yang erbaik buat kamu, pengen
 				ekonomiku stabil, badan yang bagus, pengen jadi sosok pasangan yang
 				bener-bener ada buat pasangan maupun keluarga (aku belajar banyak
-				dari kamu hidupmu). tapi ya memang langkahku lambat, nyari kerja
+				dari hidupmu). tapi ya memang langkahku lambat, nyari kerja
 				susah, udah kemana-mana sering aja ga dapet, karena aku gaada bakat
 				dibidangnya mungkin, aku pengennya tuh nyari kerja buat bikin sim
 				terus jadi driver ojol buat income tambahan, tapi yah kenapa ga
