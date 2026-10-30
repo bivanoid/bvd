@@ -2,7 +2,7 @@ import s from "./note.module.css";
 
 export default function Hi() {
 	const NOMOR_WA = import.meta.env.VITE_WA;
-	function linkWA(pesan) {
+	function linkWA(pesan: string) {
 		return `https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(pesan)}`;
 	}
 	return (
